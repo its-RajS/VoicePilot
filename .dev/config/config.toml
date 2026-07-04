@@ -1,0 +1,29 @@
+[app]
+version = "dev"
+first_run_complete = true
+startup_enabled = false
+theme = "dark"
+
+[hotkey]
+modifiers = ["ctrl"]
+key = "Space"
+mode = "push_to_talk"
+
+[audio]
+device_id = "default"
+sample_rate = 16000
+buffer_size = 512
+vad_sensitivity = 0.5
+
+[models]
+stt_model = "nvidia/parakeet-tdt-0.6b"
+llm_model = "qwen3:8b"
+
+[typing]
+enabled = false   # disable for dev (important)
+mode = "clipboard"
+
+[advanced]
+ipc_protocol = "websocket"
+websocket_port = 8765
+log_level = "debug"

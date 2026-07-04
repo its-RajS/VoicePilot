@@ -1,0 +1,4820 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "hybrid_local_first_stack",
+        "label": "Hybrid Local-First Application Stack",
+        "nodes": [
+          "architecture_tauri_rust_shell",
+          "architecture_react_ui",
+          "architecture_python_fastapi"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "mvp-voicePilot/docs/architecture.md"
+      },
+      {
+        "id": "sqlite_runtime_settings_schema",
+        "label": "Runtime Settings Schema",
+        "nodes": [
+          "schema_config_table",
+          "schema_hotkey_table",
+          "schema_audio_table",
+          "schema_models_table"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "mvp-voicePilot/config/schema.sql"
+      },
+      {
+        "id": "phase0_bootstrap_slice",
+        "label": "Phase 0 Bootstrap Slice",
+        "nodes": [
+          "development_phase0",
+          "main_fastapi_app",
+          "health_health_endpoint",
+          "ci_checks_workflow",
+          "schema_config_table"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9,
+        "source_file": "mvp-voicePilot/docs/development.md"
+      },
+      {
+        "id": "desktop_shell_assembly",
+        "label": "Desktop Shell Assembly",
+        "nodes": [
+          "main_rust_entrypoint",
+          "lib_run",
+          "tauri_conf_runtime_config",
+          "app_app_component"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "mvp-voicePilot/src-tauri/src/main.rs"
+      },
+      {
+        "id": "config_delivery_path",
+        "label": "Config Delivery Path",
+        "nodes": [
+          "commands_get_config",
+          "config_appconfig",
+          "config_appconfig_default"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs"
+      },
+      {
+        "id": "inference_engine_placeholders",
+        "label": "Inference Engine Placeholders",
+        "nodes": [
+          "llm_client_enginenotimplemented",
+          "stt_engine_enginenotimplemented",
+          "vad_engine_enginenotimplemented"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/llm_client.py"
+      },
+      {
+        "id": "services_subsystem",
+        "label": "Services Subsystem",
+        "nodes": [
+          "audio_service_serviceboundary",
+          "config_service_serviceboundary",
+          "hotkey_service_serviceboundary",
+          "ipc_client_serviceboundary",
+          "tray_manager_serviceboundary",
+          "window_service_serviceboundary"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "mvp-voicePilot/src-tauri/src/services/mod.rs"
+      },
+      {
+        "id": "voice_interaction_feedback_loop",
+        "label": "Voice Interaction Feedback Loop",
+        "nodes": [
+          "hotkey_service_serviceboundary",
+          "app_state_sessionstate",
+          "transcriptstore_usetranscriptstore",
+          "liveoverlay_liveoverlay"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.72,
+        "source_file": "mvp-voicePilot/src/components/overlay/LiveOverlay.tsx"
+      },
+      {
+        "id": "configuration_surface",
+        "label": "Configuration Surface",
+        "nodes": [
+          "config_service_serviceboundary",
+          "config_voicepilotconfig",
+          "paths_config_dir"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "mvp-voicePilot/src/types/config.ts"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": ".graphify_detect.json",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect",
+      "community": 6,
+      "norm_label": ".graphify_detect.json"
+    },
+    {
+      "label": "files",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_files",
+      "community": 6,
+      "norm_label": "files"
+    },
+    {
+      "label": "code",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_files_code",
+      "community": 6,
+      "norm_label": "code"
+    },
+    {
+      "label": "document",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_files_document",
+      "community": 6,
+      "norm_label": "document"
+    },
+    {
+      "label": "paper",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_files_paper",
+      "community": 6,
+      "norm_label": "paper"
+    },
+    {
+      "label": "image",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_files_image",
+      "community": 6,
+      "norm_label": "image"
+    },
+    {
+      "label": "video",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_files_video",
+      "community": 6,
+      "norm_label": "video"
+    },
+    {
+      "label": "total_files",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_total_files",
+      "community": 6,
+      "norm_label": "total_files"
+    },
+    {
+      "label": "total_words",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_total_words",
+      "community": 6,
+      "norm_label": "total_words"
+    },
+    {
+      "label": "needs_graph",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_needs_graph",
+      "community": 6,
+      "norm_label": "needs_graph"
+    },
+    {
+      "label": "warning",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_warning",
+      "community": 6,
+      "norm_label": "warning"
+    },
+    {
+      "label": "skipped_sensitive",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_skipped_sensitive",
+      "community": 6,
+      "norm_label": "skipped_sensitive"
+    },
+    {
+      "label": "graphifyignore_patterns",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_graphifyignore_patterns",
+      "community": 6,
+      "norm_label": "graphifyignore_patterns"
+    },
+    {
+      "label": "scan_root",
+      "file_type": "code",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "id": "graphify_detect_scan_root",
+      "community": 6,
+      "norm_label": "scan_root"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/__init__.py",
+      "source_location": "L1",
+      "id": "voicepilot_inference_init",
+      "community": 44,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/api/__init__.py",
+      "source_location": "L1",
+      "id": "api_init",
+      "community": 26,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "health.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/api/health.py",
+      "source_location": "L1",
+      "id": "api_health",
+      "community": 17,
+      "norm_label": "health.py"
+    },
+    {
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/api/health.py",
+      "source_location": "L6",
+      "id": "api_health_health",
+      "community": 17,
+      "norm_label": "health()"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/api/health.py",
+      "source_location": "L6",
+      "id": "mvp_voicepilot_inference_src_voicepilot_inference_api_health_py_str",
+      "community": 17,
+      "norm_label": "str"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/audio/__init__.py",
+      "source_location": "L1",
+      "id": "audio_init",
+      "community": 27,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/__init__.py",
+      "source_location": "L1",
+      "id": "core_init",
+      "community": 28,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "pipeline.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": "L1",
+      "rationale": "# TODO: call Ollama via LlmClient; fall back to raw transcript on failure.",
+      "id": "core_pipeline",
+      "community": 13,
+      "norm_label": "pipeline.py"
+    },
+    {
+      "label": "PipelineResult",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": "L4",
+      "id": "core_pipeline_pipelineresult",
+      "community": 13,
+      "norm_label": "pipelineresult"
+    },
+    {
+      "label": "PipelineOrchestrator",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": "L8",
+      "id": "core_pipeline_pipelineorchestrator",
+      "community": 13,
+      "norm_label": "pipelineorchestrator"
+    },
+    {
+      "label": ".cleanup_transcript()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": "L9",
+      "id": "core_pipeline_pipelineorchestrator_cleanup_transcript",
+      "community": 13,
+      "norm_label": ".cleanup_transcript()"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": "L9",
+      "id": "mvp_voicepilot_inference_src_voicepilot_inference_core_pipeline_py_str",
+      "community": 13,
+      "norm_label": "str"
+    },
+    {
+      "label": "state.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/state.py",
+      "source_location": "L1",
+      "id": "core_state",
+      "community": 18,
+      "norm_label": "state.py"
+    },
+    {
+      "label": "PipelineState",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/state.py",
+      "source_location": "L3",
+      "id": "core_state_pipelinestate",
+      "community": 18,
+      "norm_label": "pipelinestate"
+    },
+    {
+      "label": "StrEnum",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "strenum",
+      "community": 18,
+      "norm_label": "strenum"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/__init__.py",
+      "source_location": "L1",
+      "id": "engines_init",
+      "community": 29,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "llm_client.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/llm_client.py",
+      "source_location": "L1",
+      "id": "engines_llm_client",
+      "community": 9,
+      "norm_label": "llm_client.py"
+    },
+    {
+      "label": "EngineNotImplemented",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/llm_client.py",
+      "source_location": "L1",
+      "id": "engines_llm_client_enginenotimplemented",
+      "community": 9,
+      "norm_label": "enginenotimplemented"
+    },
+    {
+      "label": "Exception",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "exception",
+      "community": 9,
+      "norm_label": "exception"
+    },
+    {
+      "label": "postprocessor.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/postprocessor.py",
+      "source_location": "L1",
+      "id": "engines_postprocessor",
+      "community": 9,
+      "norm_label": "postprocessor.py"
+    },
+    {
+      "label": "EngineNotImplemented",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/postprocessor.py",
+      "source_location": "L1",
+      "id": "engines_postprocessor_enginenotimplemented",
+      "community": 9,
+      "norm_label": "enginenotimplemented"
+    },
+    {
+      "label": "stt_engine.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/stt_engine.py",
+      "source_location": "L1",
+      "id": "engines_stt_engine",
+      "community": 9,
+      "norm_label": "stt_engine.py"
+    },
+    {
+      "label": "EngineNotImplemented",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/stt_engine.py",
+      "source_location": "L1",
+      "id": "engines_stt_engine_enginenotimplemented",
+      "community": 9,
+      "norm_label": "enginenotimplemented"
+    },
+    {
+      "label": "vad_engine.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/vad_engine.py",
+      "source_location": "L1",
+      "id": "engines_vad_engine",
+      "community": 9,
+      "norm_label": "vad_engine.py"
+    },
+    {
+      "label": "EngineNotImplemented",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/vad_engine.py",
+      "source_location": "L1",
+      "id": "engines_vad_engine_enginenotimplemented",
+      "community": 9,
+      "norm_label": "enginenotimplemented"
+    },
+    {
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/main.py",
+      "source_location": "L1",
+      "id": "voicepilot_inference_main",
+      "community": 45,
+      "norm_label": "main.py"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/models/__init__.py",
+      "source_location": "L1",
+      "id": "models_init",
+      "community": 30,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/prompts/__init__.py",
+      "source_location": "L1",
+      "id": "prompts_init",
+      "community": 33,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "engineering.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/prompts/engineering.py",
+      "source_location": "L1",
+      "id": "prompts_engineering",
+      "community": 32,
+      "norm_label": "engineering.py"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/utils/__init__.py",
+      "source_location": "L1",
+      "id": "utils_init",
+      "community": 42,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L1",
+      "id": "mvp_voicepilot_package",
+      "community": 0,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L2",
+      "id": "mvp_voicepilot_package_name",
+      "community": 0,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L3",
+      "id": "mvp_voicepilot_package_version",
+      "community": 0,
+      "norm_label": "version"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L4",
+      "id": "mvp_voicepilot_package_private",
+      "community": 0,
+      "norm_label": "private"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L5",
+      "id": "mvp_voicepilot_package_type",
+      "community": 0,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L6",
+      "id": "mvp_voicepilot_package_scripts",
+      "community": 0,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L7",
+      "id": "mvp_voicepilot_package_scripts_dev",
+      "community": 0,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L8",
+      "id": "mvp_voicepilot_package_scripts_build",
+      "community": 0,
+      "norm_label": "build"
+    },
+    {
+      "label": "tauri:dev",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L9",
+      "id": "mvp_voicepilot_package_scripts_tauri_dev",
+      "community": 0,
+      "norm_label": "tauri:dev"
+    },
+    {
+      "label": "tauri:build",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L10",
+      "id": "mvp_voicepilot_package_scripts_tauri_build",
+      "community": 0,
+      "norm_label": "tauri:build"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L11",
+      "id": "mvp_voicepilot_package_scripts_lint",
+      "community": 0,
+      "norm_label": "lint"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L13",
+      "id": "mvp_voicepilot_package_dependencies",
+      "community": 0,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@tauri-apps/api",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L14",
+      "id": "mvp_voicepilot_package_dependencies_tauri_apps_api",
+      "community": 0,
+      "norm_label": "@tauri-apps/api"
+    },
+    {
+      "label": "@vitejs/plugin-react",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L15",
+      "id": "mvp_voicepilot_package_dependencies_vitejs_plugin_react",
+      "community": 0,
+      "norm_label": "@vitejs/plugin-react"
+    },
+    {
+      "label": "vite",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L16",
+      "id": "mvp_voicepilot_package_dependencies_vite",
+      "community": 0,
+      "norm_label": "vite"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L17",
+      "id": "mvp_voicepilot_package_dependencies_typescript",
+      "community": 0,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L18",
+      "id": "mvp_voicepilot_package_dependencies_react",
+      "community": 0,
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L19",
+      "id": "mvp_voicepilot_package_dependencies_react_dom",
+      "community": 0,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "zustand",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L20",
+      "id": "mvp_voicepilot_package_dependencies_zustand",
+      "community": 0,
+      "norm_label": "zustand"
+    },
+    {
+      "label": "lucide-react",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L21",
+      "id": "mvp_voicepilot_package_dependencies_lucide_react",
+      "community": 0,
+      "norm_label": "lucide-react"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L23",
+      "id": "mvp_voicepilot_package_devdependencies",
+      "community": 0,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L24",
+      "id": "mvp_voicepilot_package_devdependencies_types_react",
+      "community": 0,
+      "norm_label": "@types/react"
+    },
+    {
+      "label": "@types/react-dom",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L25",
+      "id": "mvp_voicepilot_package_devdependencies_types_react_dom",
+      "community": 0,
+      "norm_label": "@types/react-dom"
+    },
+    {
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L26",
+      "id": "mvp_voicepilot_package_devdependencies_eslint",
+      "community": 0,
+      "norm_label": "eslint"
+    },
+    {
+      "label": "build.sh",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/scripts/build.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "id": "scripts_build",
+      "community": 19,
+      "norm_label": "build.sh"
+    },
+    {
+      "label": "build.sh script",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/scripts/build.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "id": "home_its_raj_projects_main_voicepilot_mvp_voicepilot_scripts_build_sh__entry",
+      "community": 19,
+      "norm_label": "build.sh script"
+    },
+    {
+      "label": "dev-setup.sh",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/scripts/dev-setup.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "id": "scripts_dev_setup",
+      "community": 20,
+      "norm_label": "dev-setup.sh"
+    },
+    {
+      "label": "dev-setup.sh script",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/scripts/dev-setup.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "id": "home_its_raj_projects_main_voicepilot_mvp_voicepilot_scripts_dev_setup_sh__entry",
+      "community": 20,
+      "norm_label": "dev-setup.sh script"
+    },
+    {
+      "label": "mod.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L1",
+      "id": "commands_mod",
+      "community": 10,
+      "norm_label": "mod.rs"
+    },
+    {
+      "label": "health()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L4",
+      "id": "commands_mod_health",
+      "community": 10,
+      "norm_label": "health()"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L4",
+      "id": "result",
+      "community": 10,
+      "norm_label": "result"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L4",
+      "id": "mvp_voicepilot_src_tauri_src_commands_mod_rs_string",
+      "community": 10,
+      "norm_label": "string"
+    },
+    {
+      "label": "get_config()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L9",
+      "id": "commands_mod_get_config",
+      "community": 10,
+      "norm_label": "get_config()"
+    },
+    {
+      "label": "AppConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L9",
+      "id": "appconfig",
+      "community": 10,
+      "norm_label": "appconfig"
+    },
+    {
+      "label": "lib.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/lib.rs",
+      "source_location": "L1",
+      "id": "src_lib",
+      "community": 23,
+      "norm_label": "lib.rs"
+    },
+    {
+      "label": "run()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/lib.rs",
+      "source_location": "L8",
+      "id": "src_lib_run",
+      "community": 23,
+      "norm_label": "run()"
+    },
+    {
+      "label": "main.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/main.rs",
+      "source_location": "L1",
+      "id": "mvp_voicepilot_src_tauri_src_main_rs_src_main",
+      "community": 22,
+      "norm_label": "main.rs"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/main.rs",
+      "source_location": "L1",
+      "id": "src_main_main",
+      "community": 22,
+      "norm_label": "main()"
+    },
+    {
+      "label": "config.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L1",
+      "id": "models_config",
+      "community": 3,
+      "norm_label": "config.rs"
+    },
+    {
+      "label": "AppConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L4",
+      "id": "models_config_appconfig",
+      "community": 3,
+      "norm_label": "appconfig"
+    },
+    {
+      "label": "HotkeyConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L5",
+      "id": "hotkeyconfig",
+      "community": 3,
+      "norm_label": "hotkeyconfig"
+    },
+    {
+      "label": "AudioConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L6",
+      "id": "audioconfig",
+      "community": 3,
+      "norm_label": "audioconfig"
+    },
+    {
+      "label": "ModelConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L7",
+      "id": "modelconfig",
+      "community": 3,
+      "norm_label": "modelconfig"
+    },
+    {
+      "label": "TypingConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L8",
+      "id": "typingconfig",
+      "community": 3,
+      "norm_label": "typingconfig"
+    },
+    {
+      "label": "HotkeyConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L12",
+      "id": "models_config_hotkeyconfig",
+      "community": 3,
+      "norm_label": "hotkeyconfig"
+    },
+    {
+      "label": "Vec",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L12",
+      "id": "vec",
+      "community": 3,
+      "norm_label": "vec"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L12",
+      "id": "mvp_voicepilot_src_tauri_src_models_config_rs_string",
+      "community": 3,
+      "norm_label": "string"
+    },
+    {
+      "label": "AudioConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L14",
+      "id": "models_config_audioconfig",
+      "community": 3,
+      "norm_label": "audioconfig"
+    },
+    {
+      "label": "Option",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L14",
+      "id": "mvp_voicepilot_src_tauri_src_models_config_rs_option",
+      "community": 3,
+      "norm_label": "option"
+    },
+    {
+      "label": "ModelConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L16",
+      "id": "models_config_modelconfig",
+      "community": 3,
+      "norm_label": "modelconfig"
+    },
+    {
+      "label": "TypingConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L18",
+      "id": "models_config_typingconfig",
+      "community": 3,
+      "norm_label": "typingconfig"
+    },
+    {
+      "label": "Default",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L20",
+      "id": "default",
+      "community": 3,
+      "norm_label": "default"
+    },
+    {
+      "label": ".default()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L21",
+      "id": "models_config_appconfig_default",
+      "community": 3,
+      "norm_label": ".default()"
+    },
+    {
+      "label": "Self",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L21",
+      "id": "self",
+      "community": 3,
+      "norm_label": "self"
+    },
+    {
+      "label": "error.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/error.rs",
+      "source_location": "L1",
+      "id": "models_error",
+      "community": 21,
+      "norm_label": "error.rs"
+    },
+    {
+      "label": "VoicePilotError",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/error.rs",
+      "source_location": "L4",
+      "id": "models_error_voicepiloterror",
+      "community": 21,
+      "norm_label": "voicepiloterror"
+    },
+    {
+      "label": "mod.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/mod.rs",
+      "source_location": "L1",
+      "id": "models_mod",
+      "community": 31,
+      "norm_label": "mod.rs"
+    },
+    {
+      "label": "transcript.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/transcript.rs",
+      "source_location": "L1",
+      "id": "models_transcript",
+      "community": 15,
+      "norm_label": "transcript.rs"
+    },
+    {
+      "label": "TranscriptEvent",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/transcript.rs",
+      "source_location": "L4",
+      "id": "models_transcript_transcriptevent",
+      "community": 15,
+      "norm_label": "transcriptevent"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/transcript.rs",
+      "source_location": "L5",
+      "id": "mvp_voicepilot_src_tauri_src_models_transcript_rs_string",
+      "community": 15,
+      "norm_label": "string"
+    },
+    {
+      "label": "Option",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/transcript.rs",
+      "source_location": "L7",
+      "id": "mvp_voicepilot_src_tauri_src_models_transcript_rs_option",
+      "community": 15,
+      "norm_label": "option"
+    },
+    {
+      "label": "audio_service.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/audio_service.rs",
+      "source_location": "L1",
+      "id": "services_audio_service",
+      "community": 34,
+      "norm_label": "audio_service.rs"
+    },
+    {
+      "label": "config_service.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/config_service.rs",
+      "source_location": "L1",
+      "id": "services_config_service",
+      "community": 35,
+      "norm_label": "config_service.rs"
+    },
+    {
+      "label": "hotkey_service.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L1",
+      "id": "services_hotkey_service",
+      "community": 36,
+      "norm_label": "hotkey_service.rs"
+    },
+    {
+      "label": "ipc_client.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/ipc_client.rs",
+      "source_location": "L1",
+      "id": "services_ipc_client",
+      "community": 37,
+      "norm_label": "ipc_client.rs"
+    },
+    {
+      "label": "mod.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/mod.rs",
+      "source_location": "L1",
+      "id": "services_mod",
+      "community": 38,
+      "norm_label": "mod.rs"
+    },
+    {
+      "label": "tray_manager.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/tray_manager.rs",
+      "source_location": "L1",
+      "id": "services_tray_manager",
+      "community": 39,
+      "norm_label": "tray_manager.rs"
+    },
+    {
+      "label": "window_service.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/window_service.rs",
+      "source_location": "L1",
+      "id": "services_window_service",
+      "community": 40,
+      "norm_label": "window_service.rs"
+    },
+    {
+      "label": "app_state.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/state/app_state.rs",
+      "source_location": "L1",
+      "id": "state_app_state",
+      "community": 24,
+      "norm_label": "app_state.rs"
+    },
+    {
+      "label": "SessionState",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/state/app_state.rs",
+      "source_location": "L2",
+      "id": "state_app_state_sessionstate",
+      "community": 24,
+      "norm_label": "sessionstate"
+    },
+    {
+      "label": "mod.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/state/mod.rs",
+      "source_location": "L1",
+      "id": "state_mod",
+      "community": 41,
+      "norm_label": "mod.rs"
+    },
+    {
+      "label": "mod.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/mod.rs",
+      "source_location": "L1",
+      "id": "utils_mod",
+      "community": 43,
+      "norm_label": "mod.rs"
+    },
+    {
+      "label": "paths.rs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L1",
+      "id": "utils_paths",
+      "community": 11,
+      "norm_label": "paths.rs"
+    },
+    {
+      "label": "project_dirs()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L3",
+      "id": "utils_paths_project_dirs",
+      "community": 11,
+      "norm_label": "project_dirs()"
+    },
+    {
+      "label": "Option",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L3",
+      "id": "mvp_voicepilot_src_tauri_src_utils_paths_rs_option",
+      "community": 11,
+      "norm_label": "option"
+    },
+    {
+      "label": "ProjectDirs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L3",
+      "id": "projectdirs",
+      "community": 11,
+      "norm_label": "projectdirs"
+    },
+    {
+      "label": "config_dir()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L7",
+      "id": "utils_paths_config_dir",
+      "community": 11,
+      "norm_label": "config_dir()"
+    },
+    {
+      "label": "PathBuf",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L7",
+      "id": "pathbuf",
+      "community": 11,
+      "norm_label": "pathbuf"
+    },
+    {
+      "label": "tauri.conf.json",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L1",
+      "id": "src_tauri_tauri_conf",
+      "community": 7,
+      "norm_label": "tauri.conf.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L2",
+      "id": "src_tauri_tauri_conf_schema",
+      "community": 7,
+      "norm_label": "$schema"
+    },
+    {
+      "label": "productName",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L3",
+      "id": "src_tauri_tauri_conf_productname",
+      "community": 7,
+      "norm_label": "productname"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L4",
+      "id": "src_tauri_tauri_conf_version",
+      "community": 7,
+      "norm_label": "version"
+    },
+    {
+      "label": "identifier",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L5",
+      "id": "src_tauri_tauri_conf_identifier",
+      "community": 7,
+      "norm_label": "identifier"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L6",
+      "id": "src_tauri_tauri_conf_build",
+      "community": 7,
+      "norm_label": "build"
+    },
+    {
+      "label": "beforeDevCommand",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L7",
+      "id": "src_tauri_tauri_conf_build_beforedevcommand",
+      "community": 7,
+      "norm_label": "beforedevcommand"
+    },
+    {
+      "label": "devUrl",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L8",
+      "id": "src_tauri_tauri_conf_build_devurl",
+      "community": 7,
+      "norm_label": "devurl"
+    },
+    {
+      "label": "beforeBuildCommand",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L9",
+      "id": "src_tauri_tauri_conf_build_beforebuildcommand",
+      "community": 7,
+      "norm_label": "beforebuildcommand"
+    },
+    {
+      "label": "frontendDist",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L10",
+      "id": "src_tauri_tauri_conf_build_frontenddist",
+      "community": 7,
+      "norm_label": "frontenddist"
+    },
+    {
+      "label": "app",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L12",
+      "id": "src_tauri_tauri_conf_app",
+      "community": 7,
+      "norm_label": "app"
+    },
+    {
+      "label": "windows",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L13",
+      "id": "src_tauri_tauri_conf_app_windows",
+      "community": 7,
+      "norm_label": "windows"
+    },
+    {
+      "label": "security",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L20",
+      "id": "src_tauri_tauri_conf_app_security",
+      "community": 7,
+      "norm_label": "security"
+    },
+    {
+      "label": "csp",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L20",
+      "id": "src_tauri_tauri_conf_security_csp",
+      "community": 7,
+      "norm_label": "csp"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/App.tsx",
+      "source_location": "L1",
+      "id": "src_app",
+      "community": 14,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/App.tsx",
+      "source_location": "L4",
+      "id": "src_app_app",
+      "community": 14,
+      "norm_label": "app()"
+    },
+    {
+      "label": "LiveOverlay.tsx",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/components/overlay/LiveOverlay.tsx",
+      "source_location": "L1",
+      "id": "overlay_liveoverlay",
+      "community": 14,
+      "norm_label": "liveoverlay.tsx"
+    },
+    {
+      "label": "LiveOverlay()",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/components/overlay/LiveOverlay.tsx",
+      "source_location": "L1",
+      "id": "overlay_liveoverlay_liveoverlay",
+      "community": 14,
+      "norm_label": "liveoverlay()"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/main.tsx",
+      "source_location": "L1",
+      "id": "mvp_voicepilot_src_main_tsx_src_main",
+      "community": 14,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "transcriptStore.ts",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/stores/transcriptStore.ts",
+      "source_location": "L1",
+      "id": "stores_transcriptstore",
+      "community": 16,
+      "norm_label": "transcriptstore.ts"
+    },
+    {
+      "label": "Status",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/stores/transcriptStore.ts",
+      "source_location": "L3",
+      "id": "stores_transcriptstore_status",
+      "community": 16,
+      "norm_label": "status"
+    },
+    {
+      "label": "TranscriptStore",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/stores/transcriptStore.ts",
+      "source_location": "L5",
+      "id": "stores_transcriptstore_transcriptstore",
+      "community": 16,
+      "norm_label": "transcriptstore"
+    },
+    {
+      "label": "useTranscriptStore",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/stores/transcriptStore.ts",
+      "source_location": "L14",
+      "id": "stores_transcriptstore_usetranscriptstore",
+      "community": 16,
+      "norm_label": "usetranscriptstore"
+    },
+    {
+      "label": "config.ts",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/types/config.ts",
+      "source_location": "L1",
+      "id": "types_config",
+      "community": 25,
+      "norm_label": "config.ts"
+    },
+    {
+      "label": "VoicePilotConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/types/config.ts",
+      "source_location": "L1",
+      "id": "types_config_voicepilotconfig",
+      "community": 25,
+      "norm_label": "voicepilotconfig"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L1",
+      "id": "mvp_voicepilot_tsconfig",
+      "community": 1,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L2",
+      "id": "mvp_voicepilot_tsconfig_compileroptions",
+      "community": 1,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L3",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_target",
+      "community": 1,
+      "norm_label": "target"
+    },
+    {
+      "label": "useDefineForClassFields",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L4",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_usedefineforclassfields",
+      "community": 1,
+      "norm_label": "usedefineforclassfields"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L5",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_lib",
+      "community": 1,
+      "norm_label": "lib"
+    },
+    {
+      "label": "allowJs",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L6",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_allowjs",
+      "community": 1,
+      "norm_label": "allowjs"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L7",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_skiplibcheck",
+      "community": 1,
+      "norm_label": "skiplibcheck"
+    },
+    {
+      "label": "esModuleInterop",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L8",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_esmoduleinterop",
+      "community": 1,
+      "norm_label": "esmoduleinterop"
+    },
+    {
+      "label": "allowSyntheticDefaultImports",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L9",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_allowsyntheticdefaultimports",
+      "community": 1,
+      "norm_label": "allowsyntheticdefaultimports"
+    },
+    {
+      "label": "strict",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L10",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_strict",
+      "community": 1,
+      "norm_label": "strict"
+    },
+    {
+      "label": "forceConsistentCasingInFileNames",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L11",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_forceconsistentcasinginfilenames",
+      "community": 1,
+      "norm_label": "forceconsistentcasinginfilenames"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L12",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_module",
+      "community": 1,
+      "norm_label": "module"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L13",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_moduleresolution",
+      "community": 1,
+      "norm_label": "moduleresolution"
+    },
+    {
+      "label": "resolveJsonModule",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L14",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_resolvejsonmodule",
+      "community": 1,
+      "norm_label": "resolvejsonmodule"
+    },
+    {
+      "label": "isolatedModules",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L15",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_isolatedmodules",
+      "community": 1,
+      "norm_label": "isolatedmodules"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L16",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_noemit",
+      "community": 1,
+      "norm_label": "noemit"
+    },
+    {
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L17",
+      "id": "mvp_voicepilot_tsconfig_compileroptions_jsx",
+      "community": 1,
+      "norm_label": "jsx"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L19",
+      "id": "mvp_voicepilot_tsconfig_include",
+      "community": 1,
+      "norm_label": "include"
+    },
+    {
+      "label": "references",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L20",
+      "id": "mvp_voicepilot_tsconfig_references",
+      "community": 1,
+      "norm_label": "references"
+    },
+    {
+      "label": "VoicePilot",
+      "file_type": "document",
+      "source_file": "docs/product-specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A local-first voice-to-prompt assistant for Linux developers that preserves technical intent and privacy.",
+      "id": "productspec_voicepilot",
+      "community": 8,
+      "norm_label": "voicepilot"
+    },
+    {
+      "label": "Push-To-Talk Voice To Prompt Flow",
+      "file_type": "document",
+      "source_file": "docs/product-specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productspec_push_to_talk_flow",
+      "community": 8,
+      "norm_label": "push-to-talk voice to prompt flow"
+    },
+    {
+      "label": "Offline And Privacy-First Operation",
+      "file_type": "document",
+      "source_file": "docs/product-specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Audio and transcript data must remain local by default, with no telemetry or external model calls unless explicitly enabled.",
+      "id": "productspec_local_privacy",
+      "community": 2,
+      "norm_label": "offline and privacy-first operation"
+    },
+    {
+      "label": "Modular Replaceable Service Boundaries",
+      "file_type": "document",
+      "source_file": "docs/product-specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "ASR, VAD, cleanup, typing, storage, and UI should be isolated behind clear boundaries with replaceable provider adapters.",
+      "id": "productspec_modular_architecture",
+      "community": 8,
+      "norm_label": "modular replaceable service boundaries"
+    },
+    {
+      "label": "Local LLM Prompt Cleanup",
+      "file_type": "document",
+      "source_file": "docs/product-specification.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productspec_ollama_cleanup",
+      "community": 8,
+      "norm_label": "local llm prompt cleanup"
+    },
+    {
+      "label": "MVP Technology Stack",
+      "file_type": "document",
+      "source_file": "mvp-voicePilot/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_mvp_stack",
+      "community": 2,
+      "norm_label": "mvp technology stack"
+    },
+    {
+      "label": "Initial Project Scaffold",
+      "file_type": "document",
+      "source_file": "mvp-voicePilot/CHANGELOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "changelog_initial_scaffold",
+      "community": 2,
+      "norm_label": "initial project scaffold"
+    },
+    {
+      "label": "No Default Logging Of Audio Or Prompts",
+      "file_type": "document",
+      "source_file": "mvp-voicePilot/CONTRIBUTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "contributing_privacy_rule",
+      "community": 2,
+      "norm_label": "no default logging of audio or prompts"
+    },
+    {
+      "label": "Hybrid Local-First Architecture",
+      "file_type": "document",
+      "source_file": "mvp-voicePilot/docs/architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The desktop shell, frontend, and inference layer are deliberately split across Rust, React, and Python while keeping user data local.",
+      "id": "architecture_hybrid_local_first",
+      "community": 2,
+      "norm_label": "hybrid local-first architecture"
+    },
+    {
+      "label": "Tauri Rust Desktop Shell",
+      "file_type": "document",
+      "source_file": "mvp-voicePilot/docs/architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_tauri_rust_shell",
+      "community": 2,
+      "norm_label": "tauri rust desktop shell"
+    },
+    {
+      "label": "React TypeScript UI",
+      "file_type": "document",
+      "source_file": "mvp-voicePilot/docs/architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_react_ui",
+      "community": 2,
+      "norm_label": "react typescript ui"
+    },
+    {
+      "label": "Python FastAPI Inference Layer",
+      "file_type": "document",
+      "source_file": "mvp-voicePilot/docs/architecture.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "architecture_python_fastapi",
+      "community": 2,
+      "norm_label": "python fastapi inference layer"
+    },
+    {
+      "label": "Phase 0 Milestone",
+      "file_type": "document",
+      "source_file": "mvp-voicePilot/docs/development.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "development_phase0",
+      "community": 2,
+      "norm_label": "phase 0 milestone"
+    },
+    {
+      "label": "Phase 1 Milestone",
+      "file_type": "document",
+      "source_file": "mvp-voicePilot/docs/development.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "development_phase1",
+      "community": 8,
+      "norm_label": "phase 1 milestone"
+    },
+    {
+      "label": "Frontend Build And Desktop Scripts",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "package_frontend_toolchain",
+      "community": 2,
+      "norm_label": "frontend build and desktop scripts"
+    },
+    {
+      "label": "Frontend TypeScript Compiler Configuration",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tsconfig_frontend_compiler_config",
+      "community": 2,
+      "norm_label": "frontend typescript compiler configuration"
+    },
+    {
+      "label": "Frontend Root Mount Page",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "index_root_mount",
+      "community": 2,
+      "norm_label": "frontend root mount page"
+    },
+    {
+      "label": "Continuous Integration Checks",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/.github/workflows/ci.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ci_checks_workflow",
+      "community": 2,
+      "norm_label": "continuous integration checks"
+    },
+    {
+      "label": "Config Table",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/config/schema.sql",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "schema_config_table",
+      "community": 2,
+      "norm_label": "config table"
+    },
+    {
+      "label": "Hotkey Table",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/config/schema.sql",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "schema_hotkey_table",
+      "community": 8,
+      "norm_label": "hotkey table"
+    },
+    {
+      "label": "Audio Table",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/config/schema.sql",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "schema_audio_table",
+      "community": 8,
+      "norm_label": "audio table"
+    },
+    {
+      "label": "Models Table",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/config/schema.sql",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "schema_models_table",
+      "community": 8,
+      "norm_label": "models table"
+    },
+    {
+      "label": "Initial Schema Migration",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/config/migrations/001_initial.sql",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "migration_initial_schema",
+      "community": 8,
+      "norm_label": "initial schema migration"
+    },
+    {
+      "label": "Inference Python Dependencies",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/requirements.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_inference_dependencies",
+      "community": 2,
+      "norm_label": "inference python dependencies"
+    },
+    {
+      "label": "Inference FastAPI Application",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/main.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_fastapi_app",
+      "community": 2,
+      "norm_label": "inference fastapi application"
+    },
+    {
+      "label": "Health Endpoint",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/api/health.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "health_health_endpoint",
+      "community": 2,
+      "norm_label": "health endpoint"
+    },
+    {
+      "label": "Pipeline Result",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "pipeline_pipeline_result",
+      "community": 8,
+      "norm_label": "pipeline result"
+    },
+    {
+      "label": "Pipeline Orchestrator",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "pipeline_orchestrator",
+      "community": 8,
+      "norm_label": "pipeline orchestrator"
+    },
+    {
+      "label": "Pipeline State Enum",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/state.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "state_pipeline_state",
+      "community": 8,
+      "norm_label": "pipeline state enum"
+    },
+    {
+      "label": "EngineNotImplemented (LLM Client)",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/llm_client.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "llm_client_enginenotimplemented",
+      "community": 5,
+      "norm_label": "enginenotimplemented (llm client)"
+    },
+    {
+      "label": "EngineNotImplemented (Postprocessor)",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/postprocessor.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "postprocessor_enginenotimplemented",
+      "community": 5,
+      "norm_label": "enginenotimplemented (postprocessor)"
+    },
+    {
+      "label": "EngineNotImplemented (STT Engine)",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/stt_engine.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "stt_engine_enginenotimplemented",
+      "community": 5,
+      "norm_label": "enginenotimplemented (stt engine)"
+    },
+    {
+      "label": "EngineNotImplemented (VAD Engine)",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/vad_engine.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "vad_engine_enginenotimplemented",
+      "community": 5,
+      "norm_label": "enginenotimplemented (vad engine)"
+    },
+    {
+      "label": "Engineering System Prompt",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/prompts/engineering.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "engineering_system_prompt",
+      "community": 5,
+      "norm_label": "engineering system prompt"
+    },
+    {
+      "label": "Workspace Build Script",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/scripts/build.sh",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "build_build_workspace_script",
+      "community": 12,
+      "norm_label": "workspace build script"
+    },
+    {
+      "label": "Development Prerequisites Script",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/scripts/dev-setup.sh",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "dev_setup_prerequisites_script",
+      "community": 12,
+      "norm_label": "development prerequisites script"
+    },
+    {
+      "label": "App Component",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/App.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_app_component",
+      "community": 12,
+      "norm_label": "app component"
+    },
+    {
+      "label": "React Bootstrap",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/main.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_react_bootstrap",
+      "community": 12,
+      "norm_label": "react bootstrap"
+    },
+    {
+      "label": "Tauri Runtime Config",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tauri_conf_runtime_config",
+      "community": 12,
+      "norm_label": "tauri runtime config"
+    },
+    {
+      "label": "VoicePilot Run Function",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/lib.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "lib_run",
+      "community": 5,
+      "norm_label": "voicepilot run function"
+    },
+    {
+      "label": "Rust Main Entrypoint",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/main.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "main_rust_entrypoint",
+      "community": 5,
+      "norm_label": "rust main entrypoint"
+    },
+    {
+      "label": "Health Command",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "commands_health",
+      "community": 5,
+      "norm_label": "health command"
+    },
+    {
+      "label": "Get Config Command",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "commands_get_config",
+      "community": 5,
+      "norm_label": "get config command"
+    },
+    {
+      "label": "AppConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_appconfig",
+      "community": 5,
+      "norm_label": "appconfig"
+    },
+    {
+      "label": "AppConfig Default",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_appconfig_default",
+      "community": 5,
+      "norm_label": "appconfig default"
+    },
+    {
+      "label": "AudioConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_audioconfig",
+      "community": 5,
+      "norm_label": "audioconfig"
+    },
+    {
+      "label": "ModelConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_modelconfig",
+      "community": 5,
+      "norm_label": "modelconfig"
+    },
+    {
+      "label": "VoicePilotError",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/error.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "error_voicepiloterror",
+      "community": 5,
+      "norm_label": "voicepiloterror"
+    },
+    {
+      "label": "TranscriptEvent",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/transcript.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "transcript_transcriptevent",
+      "community": 5,
+      "norm_label": "transcriptevent"
+    },
+    {
+      "label": "Audio Service Boundary",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/audio_service.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "audio_service_serviceboundary",
+      "community": 4,
+      "norm_label": "audio service boundary"
+    },
+    {
+      "label": "Config Service Boundary",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/config_service.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_service_serviceboundary",
+      "community": 4,
+      "norm_label": "config service boundary"
+    },
+    {
+      "label": "Hotkey Service Boundary",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/hotkey_service.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "hotkey_service_serviceboundary",
+      "community": 4,
+      "norm_label": "hotkey service boundary"
+    },
+    {
+      "label": "IPC Client Service Boundary",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/ipc_client.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ipc_client_serviceboundary",
+      "community": 4,
+      "norm_label": "ipc client service boundary"
+    },
+    {
+      "label": "Services Module",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/mod.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "mod_servicesmodule",
+      "community": 4,
+      "norm_label": "services module"
+    },
+    {
+      "label": "Tray Manager Boundary",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/tray_manager.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tray_manager_serviceboundary",
+      "community": 4,
+      "norm_label": "tray manager boundary"
+    },
+    {
+      "label": "Window Service Boundary",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/services/window_service.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "window_service_serviceboundary",
+      "community": 4,
+      "norm_label": "window service boundary"
+    },
+    {
+      "label": "SessionState",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/state/app_state.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_state_sessionstate",
+      "community": 4,
+      "norm_label": "sessionstate"
+    },
+    {
+      "label": "State Module",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/state/mod.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "mod_statemodule",
+      "community": 4,
+      "norm_label": "state module"
+    },
+    {
+      "label": "Utils Module",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/mod.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "mod_utilsmodule",
+      "community": 4,
+      "norm_label": "utils module"
+    },
+    {
+      "label": "Project Directories Resolver",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "paths_project_dirs",
+      "community": 4,
+      "norm_label": "project directories resolver"
+    },
+    {
+      "label": "Config Directory Resolver",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "paths_config_dir",
+      "community": 4,
+      "norm_label": "config directory resolver"
+    },
+    {
+      "label": "LiveOverlay",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/components/overlay/LiveOverlay.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "liveoverlay_liveoverlay",
+      "community": 4,
+      "norm_label": "liveoverlay"
+    },
+    {
+      "label": "Transcript Store",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/stores/transcriptStore.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "transcriptstore_usetranscriptstore",
+      "community": 4,
+      "norm_label": "transcript store"
+    },
+    {
+      "label": "VoicePilotConfig",
+      "file_type": "code",
+      "source_file": "mvp-voicePilot/src/types/config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "config_voicepilotconfig",
+      "community": 4,
+      "norm_label": "voicepilotconfig"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect",
+      "target": "graphify_detect_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect",
+      "target": "graphify_detect_graphifyignore_patterns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect",
+      "target": "graphify_detect_needs_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect",
+      "target": "graphify_detect_scan_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect",
+      "target": "graphify_detect_skipped_sensitive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect",
+      "target": "graphify_detect_total_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect",
+      "target": "graphify_detect_total_words",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect",
+      "target": "graphify_detect_warning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect_files",
+      "target": "graphify_detect_files_code",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect_files",
+      "target": "graphify_detect_files_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect_files",
+      "target": "graphify_detect_files_image",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect_files",
+      "target": "graphify_detect_files_paper",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".graphify_detect.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "graphify_detect_files",
+      "target": "graphify_detect_files_video",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/api/health.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "api_health",
+      "target": "api_health_health",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/api/health.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "api_health_health",
+      "target": "mvp_voicepilot_inference_src_voicepilot_inference_api_health_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "core_pipeline",
+      "target": "core_pipeline_pipelineorchestrator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "core_pipeline",
+      "target": "core_pipeline_pipelineresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "core_pipeline_pipelineorchestrator_cleanup_transcript",
+      "target": "core_pipeline_pipelineresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "core_pipeline_pipelineorchestrator",
+      "target": "core_pipeline_pipelineorchestrator_cleanup_transcript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "core_pipeline_pipelineorchestrator_cleanup_transcript",
+      "target": "mvp_voicepilot_inference_src_voicepilot_inference_core_pipeline_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/state.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "core_state",
+      "target": "core_state_pipelinestate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/state.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "core_state_pipelinestate",
+      "target": "strenum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/llm_client.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "engines_llm_client",
+      "target": "engines_llm_client_enginenotimplemented",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/llm_client.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "engines_llm_client_enginenotimplemented",
+      "target": "exception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/postprocessor.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "engines_postprocessor_enginenotimplemented",
+      "target": "exception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/stt_engine.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "engines_stt_engine_enginenotimplemented",
+      "target": "exception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/vad_engine.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "engines_vad_engine_enginenotimplemented",
+      "target": "exception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/postprocessor.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "engines_postprocessor",
+      "target": "engines_postprocessor_enginenotimplemented",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/stt_engine.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "engines_stt_engine",
+      "target": "engines_stt_engine_enginenotimplemented",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/vad_engine.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "engines_vad_engine",
+      "target": "engines_vad_engine_enginenotimplemented",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package",
+      "target": "mvp_voicepilot_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package",
+      "target": "mvp_voicepilot_package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package",
+      "target": "mvp_voicepilot_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package",
+      "target": "mvp_voicepilot_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package",
+      "target": "mvp_voicepilot_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package",
+      "target": "mvp_voicepilot_package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package",
+      "target": "mvp_voicepilot_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_scripts",
+      "target": "mvp_voicepilot_package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_scripts",
+      "target": "mvp_voicepilot_package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_scripts",
+      "target": "mvp_voicepilot_package_scripts_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_scripts",
+      "target": "mvp_voicepilot_package_scripts_tauri_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_scripts",
+      "target": "mvp_voicepilot_package_scripts_tauri_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_dependencies",
+      "target": "mvp_voicepilot_package_dependencies_lucide_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_dependencies",
+      "target": "mvp_voicepilot_package_dependencies_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_dependencies",
+      "target": "mvp_voicepilot_package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_dependencies",
+      "target": "mvp_voicepilot_package_dependencies_tauri_apps_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_dependencies",
+      "target": "mvp_voicepilot_package_dependencies_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_dependencies",
+      "target": "mvp_voicepilot_package_dependencies_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_dependencies",
+      "target": "mvp_voicepilot_package_dependencies_vitejs_plugin_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_dependencies",
+      "target": "mvp_voicepilot_package_dependencies_zustand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_devdependencies",
+      "target": "mvp_voicepilot_package_devdependencies_eslint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_devdependencies",
+      "target": "mvp_voicepilot_package_devdependencies_types_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_package_devdependencies",
+      "target": "mvp_voicepilot_package_devdependencies_types_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/scripts/build.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_build",
+      "target": "home_its_raj_projects_main_voicepilot_mvp_voicepilot_scripts_build_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/scripts/dev-setup.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_dev_setup",
+      "target": "home_its_raj_projects_main_voicepilot_mvp_voicepilot_scripts_dev_setup_sh__entry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "context": "import",
+      "source": "commands_mod",
+      "target": "appconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "commands_mod",
+      "target": "commands_mod_get_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "commands_mod",
+      "target": "commands_mod_health",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_mod_health",
+      "target": "mvp_voicepilot_src_tauri_src_commands_mod_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "commands_mod_health",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "commands_mod_get_config",
+      "target": "result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_mod_get_config",
+      "target": "mvp_voicepilot_src_tauri_src_commands_mod_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "commands_mod_get_config",
+      "target": "appconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/lib.rs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_lib",
+      "target": "src_lib_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/main.rs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_src_tauri_src_main_rs_src_main",
+      "target": "src_main_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "models_config",
+      "target": "models_config_appconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "models_config",
+      "target": "models_config_audioconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "models_config",
+      "target": "models_config_hotkeyconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "models_config",
+      "target": "models_config_modelconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "models_config",
+      "target": "models_config_typingconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_config_appconfig",
+      "target": "audioconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "models_config_appconfig",
+      "target": "default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_config_appconfig",
+      "target": "hotkeyconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_config_appconfig",
+      "target": "modelconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "models_config_appconfig",
+      "target": "models_config_appconfig_default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_config_appconfig",
+      "target": "typingconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_config_hotkeyconfig",
+      "target": "mvp_voicepilot_src_tauri_src_models_config_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_config_hotkeyconfig",
+      "target": "vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "models_config_audioconfig",
+      "target": "mvp_voicepilot_src_tauri_src_models_config_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_config_modelconfig",
+      "target": "mvp_voicepilot_src_tauri_src_models_config_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_config_typingconfig",
+      "target": "mvp_voicepilot_src_tauri_src_models_config_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_config_audioconfig",
+      "target": "mvp_voicepilot_src_tauri_src_models_config_rs_option",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "models_config_appconfig_default",
+      "target": "self",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/error.rs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "models_error",
+      "target": "models_error_voicepiloterror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/transcript.rs",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "models_transcript",
+      "target": "models_transcript_transcriptevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/transcript.rs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_transcript_transcriptevent",
+      "target": "mvp_voicepilot_src_tauri_src_models_transcript_rs_option",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/models/transcript.rs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "field",
+      "source": "models_transcript_transcriptevent",
+      "target": "mvp_voicepilot_src_tauri_src_models_transcript_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/state/app_state.rs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "state_app_state",
+      "target": "state_app_state_sessionstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "context": "import",
+      "source": "utils_paths",
+      "target": "projectdirs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "utils_paths",
+      "target": "utils_paths_config_dir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "utils_paths",
+      "target": "utils_paths_project_dirs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "utils_paths_project_dirs",
+      "target": "mvp_voicepilot_src_tauri_src_utils_paths_rs_option",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "utils_paths_project_dirs",
+      "target": "projectdirs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "utils_paths_config_dir",
+      "target": "pathbuf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf",
+      "target": "src_tauri_tauri_conf_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf",
+      "target": "src_tauri_tauri_conf_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf",
+      "target": "src_tauri_tauri_conf_identifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf",
+      "target": "src_tauri_tauri_conf_productname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf",
+      "target": "src_tauri_tauri_conf_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf",
+      "target": "src_tauri_tauri_conf_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf_build",
+      "target": "src_tauri_tauri_conf_build_beforebuildcommand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf_build",
+      "target": "src_tauri_tauri_conf_build_beforedevcommand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf_build",
+      "target": "src_tauri_tauri_conf_build_devurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf_build",
+      "target": "src_tauri_tauri_conf_build_frontenddist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf_app",
+      "target": "src_tauri_tauri_conf_app_security",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf_app",
+      "target": "src_tauri_tauri_conf_app_windows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_tauri_tauri_conf_app_security",
+      "target": "src_tauri_tauri_conf_security_csp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src/main.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_src_main_tsx_src_main",
+      "target": "src_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src/App.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "overlay_liveoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src/App.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "overlay_liveoverlay_liveoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src/components/overlay/LiveOverlay.tsx",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "overlay_liveoverlay",
+      "target": "overlay_liveoverlay_liveoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src/stores/transcriptStore.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "stores_transcriptstore",
+      "target": "stores_transcriptstore_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src/stores/transcriptStore.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "stores_transcriptstore",
+      "target": "stores_transcriptstore_transcriptstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src/stores/transcriptStore.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "stores_transcriptstore",
+      "target": "stores_transcriptstore_usetranscriptstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/src/types/config.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "types_config",
+      "target": "types_config_voicepilotconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig",
+      "target": "mvp_voicepilot_tsconfig_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig",
+      "target": "mvp_voicepilot_tsconfig_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig",
+      "target": "mvp_voicepilot_tsconfig_references",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_allowjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_allowsyntheticdefaultimports",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_esmoduleinterop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_forceconsistentcasinginfilenames",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_isolatedmodules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_moduleresolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_noemit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_resolvejsonmodule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_strict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "mvp_voicepilot_tsconfig_compileroptions",
+      "target": "mvp_voicepilot_tsconfig_compileroptions_usedefineforclassfields",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/product-specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productspec_voicepilot",
+      "target": "productspec_local_privacy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/product-specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productspec_voicepilot",
+      "target": "productspec_modular_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/product-specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productspec_voicepilot",
+      "target": "productspec_ollama_cleanup"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/product-specification.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productspec_voicepilot",
+      "target": "productspec_push_to_talk_flow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/docs/development.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "development_phase1",
+      "target": "productspec_push_to_talk_flow"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.78,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": null,
+      "weight": 0.78,
+      "source": "pipeline_orchestrator",
+      "target": "productspec_push_to_talk_flow"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.86,
+      "source_file": "mvp-voicePilot/config/schema.sql",
+      "source_location": null,
+      "weight": 0.86,
+      "source": "schema_audio_table",
+      "target": "productspec_push_to_talk_flow"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "mvp-voicePilot/config/schema.sql",
+      "source_location": null,
+      "weight": 0.88,
+      "source": "schema_hotkey_table",
+      "target": "productspec_push_to_talk_flow"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/state.py",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "state_pipeline_state",
+      "target": "productspec_push_to_talk_flow"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/docs/architecture.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_hybrid_local_first",
+      "target": "productspec_local_privacy"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.92,
+      "source_file": "mvp-voicePilot/CONTRIBUTING.md",
+      "source_location": null,
+      "weight": 0.92,
+      "source": "contributing_privacy_rule",
+      "target": "productspec_local_privacy"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/docs/architecture.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_hybrid_local_first",
+      "target": "productspec_modular_architecture"
+    },
+    {
+      "relation": "implements",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.28,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": null,
+      "weight": 0.28,
+      "source": "pipeline_orchestrator",
+      "target": "productspec_ollama_cleanup"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.76,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": null,
+      "weight": 0.76,
+      "source": "pipeline_pipeline_result",
+      "target": "productspec_ollama_cleanup"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.84,
+      "source_file": "mvp-voicePilot/config/schema.sql",
+      "source_location": null,
+      "weight": 0.84,
+      "source": "schema_models_table",
+      "target": "productspec_ollama_cleanup"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_mvp_stack",
+      "target": "architecture_python_fastapi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_mvp_stack",
+      "target": "architecture_react_ui"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_mvp_stack",
+      "target": "architecture_tauri_rust_shell"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_mvp_stack",
+      "target": "development_phase0"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "mvp-voicePilot/CHANGELOG.md",
+      "source_location": null,
+      "weight": 0.88,
+      "source": "changelog_initial_scaffold",
+      "target": "development_phase0"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.84,
+      "source_file": "mvp-voicePilot/CONTRIBUTING.md",
+      "source_location": null,
+      "weight": 0.84,
+      "source": "contributing_privacy_rule",
+      "target": "architecture_hybrid_local_first"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/docs/architecture.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_hybrid_local_first",
+      "target": "architecture_python_fastapi"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/docs/architecture.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_hybrid_local_first",
+      "target": "architecture_react_ui"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/docs/architecture.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "architecture_hybrid_local_first",
+      "target": "architecture_tauri_rust_shell"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "package_frontend_toolchain",
+      "target": "architecture_tauri_rust_shell"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "mvp-voicePilot/index.html",
+      "source_location": null,
+      "weight": 0.95,
+      "source": "index_root_mount",
+      "target": "architecture_react_ui"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/package.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "package_frontend_toolchain",
+      "target": "architecture_react_ui"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/main.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_fastapi_app",
+      "target": "architecture_python_fastapi"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/inference/requirements.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "requirements_inference_dependencies",
+      "target": "architecture_python_fastapi"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/.github/workflows/ci.yml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ci_checks_workflow",
+      "target": "development_phase0"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.94,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/api/health.py",
+      "source_location": null,
+      "weight": 0.94,
+      "source": "health_health_endpoint",
+      "target": "development_phase0"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/main.py",
+      "source_location": null,
+      "weight": 0.95,
+      "source": "main_fastapi_app",
+      "target": "development_phase0"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "mvp-voicePilot/config/schema.sql",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "schema_config_table",
+      "target": "development_phase0"
+    },
+    {
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.82,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": null,
+      "weight": 0.82,
+      "source": "pipeline_orchestrator",
+      "target": "development_phase1"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/.github/workflows/ci.yml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ci_checks_workflow",
+      "target": "package_frontend_toolchain"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.78,
+      "source_file": "mvp-voicePilot/tsconfig.json",
+      "source_location": null,
+      "weight": 0.78,
+      "source": "tsconfig_frontend_compiler_config",
+      "target": "package_frontend_toolchain"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/.github/workflows/ci.yml",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "ci_checks_workflow",
+      "target": "requirements_inference_dependencies"
+    },
+    {
+      "relation": "references",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.24,
+      "source_file": "mvp-voicePilot/config/migrations/001_initial.sql",
+      "source_location": null,
+      "weight": 0.24,
+      "source": "migration_initial_schema",
+      "target": "schema_config_table"
+    },
+    {
+      "relation": "references",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.24,
+      "source_file": "mvp-voicePilot/config/migrations/001_initial.sql",
+      "source_location": null,
+      "weight": 0.24,
+      "source": "migration_initial_schema",
+      "target": "schema_hotkey_table"
+    },
+    {
+      "relation": "references",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.24,
+      "source_file": "mvp-voicePilot/config/migrations/001_initial.sql",
+      "source_location": null,
+      "weight": 0.24,
+      "source": "migration_initial_schema",
+      "target": "schema_audio_table"
+    },
+    {
+      "relation": "references",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.24,
+      "source_file": "mvp-voicePilot/config/migrations/001_initial.sql",
+      "source_location": null,
+      "weight": 0.24,
+      "source": "migration_initial_schema",
+      "target": "schema_models_table"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/main.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_fastapi_app",
+      "target": "health_health_endpoint"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pipeline_orchestrator",
+      "target": "pipeline_pipeline_result"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.22,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/core/state.py",
+      "source_location": null,
+      "weight": 0.22,
+      "source": "state_pipeline_state",
+      "target": "pipeline_orchestrator"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.84,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/prompts/engineering.py",
+      "source_location": null,
+      "weight": 0.84,
+      "source": "engineering_system_prompt",
+      "target": "llm_client_enginenotimplemented"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.68,
+      "source_file": "mvp-voicePilot/src-tauri/src/models/error.rs",
+      "source_location": null,
+      "weight": 0.68,
+      "source": "error_voicepiloterror",
+      "target": "llm_client_enginenotimplemented"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.89,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/llm_client.py",
+      "source_location": null,
+      "weight": 0.89,
+      "source": "llm_client_enginenotimplemented",
+      "target": "config_modelconfig"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.29,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/postprocessor.py",
+      "source_location": null,
+      "weight": 0.29,
+      "source": "postprocessor_enginenotimplemented",
+      "target": "transcript_transcriptevent"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.68,
+      "source_file": "mvp-voicePilot/src-tauri/src/models/error.rs",
+      "source_location": null,
+      "weight": 0.68,
+      "source": "error_voicepiloterror",
+      "target": "stt_engine_enginenotimplemented"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.86,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/stt_engine.py",
+      "source_location": null,
+      "weight": 0.86,
+      "source": "stt_engine_enginenotimplemented",
+      "target": "config_modelconfig"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.78,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/stt_engine.py",
+      "source_location": null,
+      "weight": 0.78,
+      "source": "stt_engine_enginenotimplemented",
+      "target": "transcript_transcriptevent"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.26,
+      "source_file": "mvp-voicePilot/src-tauri/src/models/error.rs",
+      "source_location": null,
+      "weight": 0.26,
+      "source": "error_voicepiloterror",
+      "target": "vad_engine_enginenotimplemented"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/vad_engine.py",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "vad_engine_enginenotimplemented",
+      "target": "config_audioconfig"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.73,
+      "source_file": "mvp-voicePilot/scripts/build.sh",
+      "source_location": null,
+      "weight": 0.73,
+      "source": "build_build_workspace_script",
+      "target": "tauri_conf_runtime_config"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.77,
+      "source_file": "mvp-voicePilot/scripts/dev-setup.sh",
+      "source_location": null,
+      "weight": 0.77,
+      "source": "dev_setup_prerequisites_script",
+      "target": "build_build_workspace_script"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src/main.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_react_bootstrap",
+      "target": "app_app_component"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.64,
+      "source_file": "mvp-voicePilot/src-tauri/tauri.conf.json",
+      "source_location": null,
+      "weight": 0.64,
+      "source": "tauri_conf_runtime_config",
+      "target": "app_app_component"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/lib.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_run",
+      "target": "commands_get_config"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/lib.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lib_run",
+      "target": "commands_health"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/main.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "main_rust_entrypoint",
+      "target": "lib_run"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.98,
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": null,
+      "weight": 0.98,
+      "source": "commands_get_config",
+      "target": "config_appconfig"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "commands_get_config",
+      "target": "config_appconfig_default"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "config_appconfig",
+      "target": "config_audioconfig"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "config_appconfig",
+      "target": "config_modelconfig"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/models/config.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "config_appconfig_default",
+      "target": "config_appconfig"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.72,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/audio_service.rs",
+      "source_location": null,
+      "weight": 0.72,
+      "source": "audio_service_serviceboundary",
+      "target": "config_voicepilotconfig"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/mod.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mod_servicesmodule",
+      "target": "audio_service_serviceboundary"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.25,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/config_service.rs",
+      "source_location": null,
+      "weight": 0.25,
+      "source": "config_service_serviceboundary",
+      "target": "config_voicepilotconfig"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/mod.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mod_servicesmodule",
+      "target": "config_service_serviceboundary"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/hotkey_service.rs",
+      "source_location": null,
+      "weight": 0.7,
+      "source": "hotkey_service_serviceboundary",
+      "target": "config_voicepilotconfig"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.74,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/hotkey_service.rs",
+      "source_location": null,
+      "weight": 0.74,
+      "source": "hotkey_service_serviceboundary",
+      "target": "liveoverlay_liveoverlay"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/mod.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mod_servicesmodule",
+      "target": "hotkey_service_serviceboundary"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.68,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/ipc_client.rs",
+      "source_location": null,
+      "weight": 0.68,
+      "source": "ipc_client_serviceboundary",
+      "target": "transcriptstore_usetranscriptstore"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/mod.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mod_servicesmodule",
+      "target": "ipc_client_serviceboundary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/mod.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mod_servicesmodule",
+      "target": "tray_manager_serviceboundary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/mod.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mod_servicesmodule",
+      "target": "window_service_serviceboundary"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.88,
+      "source_file": "mvp-voicePilot/src-tauri/src/state/app_state.rs",
+      "source_location": null,
+      "weight": 0.88,
+      "source": "app_state_sessionstate",
+      "target": "transcriptstore_usetranscriptstore"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.78,
+      "source_file": "mvp-voicePilot/src/components/overlay/LiveOverlay.tsx",
+      "source_location": null,
+      "weight": 0.78,
+      "source": "liveoverlay_liveoverlay",
+      "target": "app_state_sessionstate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/state/mod.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mod_statemodule",
+      "target": "app_state_sessionstate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/mod.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mod_utilsmodule",
+      "target": "paths_config_dir"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/mod.rs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mod_utilsmodule",
+      "target": "paths_project_dirs"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "mvp-voicePilot/src-tauri/src/utils/paths.rs",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "paths_config_dir",
+      "target": "config_voicepilotconfig"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "mvp-voicePilot/src/components/overlay/LiveOverlay.tsx",
+      "source_location": null,
+      "weight": 0.7,
+      "source": "liveoverlay_liveoverlay",
+      "target": "config_voicepilotconfig"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.25,
+      "source_file": "mvp-voicePilot/src/stores/transcriptStore.ts",
+      "source_location": null,
+      "weight": 0.25,
+      "source": "transcriptstore_usetranscriptstore",
+      "target": "liveoverlay_liveoverlay"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "hybrid_local_first_stack",
+      "label": "Hybrid Local-First Application Stack",
+      "nodes": [
+        "architecture_tauri_rust_shell",
+        "architecture_react_ui",
+        "architecture_python_fastapi"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/docs/architecture.md"
+    },
+    {
+      "id": "sqlite_runtime_settings_schema",
+      "label": "Runtime Settings Schema",
+      "nodes": [
+        "schema_config_table",
+        "schema_hotkey_table",
+        "schema_audio_table",
+        "schema_models_table"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/config/schema.sql"
+    },
+    {
+      "id": "phase0_bootstrap_slice",
+      "label": "Phase 0 Bootstrap Slice",
+      "nodes": [
+        "development_phase0",
+        "main_fastapi_app",
+        "health_health_endpoint",
+        "ci_checks_workflow",
+        "schema_config_table"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "mvp-voicePilot/docs/development.md"
+    },
+    {
+      "id": "desktop_shell_assembly",
+      "label": "Desktop Shell Assembly",
+      "nodes": [
+        "main_rust_entrypoint",
+        "lib_run",
+        "tauri_conf_runtime_config",
+        "app_app_component"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "mvp-voicePilot/src-tauri/src/main.rs"
+    },
+    {
+      "id": "config_delivery_path",
+      "label": "Config Delivery Path",
+      "nodes": [
+        "commands_get_config",
+        "config_appconfig",
+        "config_appconfig_default"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/commands/mod.rs"
+    },
+    {
+      "id": "inference_engine_placeholders",
+      "label": "Inference Engine Placeholders",
+      "nodes": [
+        "llm_client_enginenotimplemented",
+        "stt_engine_enginenotimplemented",
+        "vad_engine_enginenotimplemented"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/inference/src/voicepilot_inference/engines/llm_client.py"
+    },
+    {
+      "id": "services_subsystem",
+      "label": "Services Subsystem",
+      "nodes": [
+        "audio_service_serviceboundary",
+        "config_service_serviceboundary",
+        "hotkey_service_serviceboundary",
+        "ipc_client_serviceboundary",
+        "tray_manager_serviceboundary",
+        "window_service_serviceboundary"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "mvp-voicePilot/src-tauri/src/services/mod.rs"
+    },
+    {
+      "id": "voice_interaction_feedback_loop",
+      "label": "Voice Interaction Feedback Loop",
+      "nodes": [
+        "hotkey_service_serviceboundary",
+        "app_state_sessionstate",
+        "transcriptstore_usetranscriptstore",
+        "liveoverlay_liveoverlay"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.72,
+      "source_file": "mvp-voicePilot/src/components/overlay/LiveOverlay.tsx"
+    },
+    {
+      "id": "configuration_surface",
+      "label": "Configuration Surface",
+      "nodes": [
+        "config_service_serviceboundary",
+        "config_voicepilotconfig",
+        "paths_config_dir"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "mvp-voicePilot/src/types/config.ts"
+    }
+  ]
+}

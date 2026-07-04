@@ -1,0 +1,2 @@
+class EngineNotImplemented(Exception):
+    pass

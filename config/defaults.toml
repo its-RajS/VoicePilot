@@ -1,0 +1,17 @@
+[hotkey]
+modifiers = ["ctrl"]
+key = "Space"
+mode = "push_to_talk"
+
+[audio]
+sample_rate = 16000
+buffer_size = 512
+vad_sensitivity = 0.5
+
+[models]
+stt_model = "nvidia/parakeet-tdt-0.6b"
+llm_model = "qwen3:8b"
+
+[typing]
+mode = "auto_type"
+speed_cps = 50
