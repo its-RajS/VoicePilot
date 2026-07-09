@@ -75,7 +75,7 @@
     "semantic_hash": "09d332ad3a6760acfa7b8863bb06a471"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/models/__init__.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.4868803,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
@@ -110,13 +110,13 @@
     "semantic_hash": "2709bd20ac79300b5b0f9bd404d52f3b"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/commands/mod.rs": {
-    "mtime": 1783617746.8164165,
-    "ast_hash": "c70e7fd37c98540ba38c4d3324ba493a",
+    "mtime": 1783619705.4663918,
+    "ast_hash": "4a7560ca1ae7a371c6db5ccd669a370d",
     "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/lib.rs": {
-    "mtime": 1783617781.1362484,
-    "ast_hash": "157fc9b40032230bce8031769f311019",
+    "mtime": 1783619813.801723,
+    "ast_hash": "5515c2aa9383f3f9a04cf7e392c9d951",
     "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/main.rs": {
@@ -125,9 +125,9 @@
     "semantic_hash": "d314e298005ac20778e1d0c2f04003fd"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/models/config.rs": {
-    "mtime": 1783105706.0,
-    "ast_hash": "2e57c97cd4dfc7d383ea3870a42e589f",
-    "semantic_hash": "2e57c97cd4dfc7d383ea3870a42e589f"
+    "mtime": 1783617846.7039597,
+    "ast_hash": "56e3bcb723e7ea66061b8897b48bd2c3",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/models/error.rs": {
     "mtime": 1783105706.0,
@@ -135,9 +135,9 @@
     "semantic_hash": "bc465aa513aa6f53d78030048d98ddfb"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/models/mod.rs": {
-    "mtime": 1783105706.0,
-    "ast_hash": "e3fb927be97dd53388b08df4c03afd02",
-    "semantic_hash": "e3fb927be97dd53388b08df4c03afd02"
+    "mtime": 1783165353.6605694,
+    "ast_hash": "baf14c05b893d8d870c8db68674403bf",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/models/transcript.rs": {
     "mtime": 1783105706.0,
@@ -677,6 +677,16 @@
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/icons/icon.png": {
     "mtime": 1783162031.8186784,
     "ast_hash": "c5af1d0eb19ee8b9d16078c7a855efe5",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/models/ipc.rs": {
+    "mtime": 1783617716.3875763,
+    "ast_hash": "01acd1bc6dc1e846a32dc191ac9f1df5",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/models/ollama.rs": {
+    "mtime": 1783165353.6570635,
+    "ast_hash": "dec4f38fec03dc64ea5e48ad3eb9f6bc",
     "semantic_hash": ""
   }
 }
