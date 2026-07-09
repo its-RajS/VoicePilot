@@ -29,10 +29,16 @@ pub async fn cleanup_transcript(
         .and_then(|service| service.load())
         .map_err(|error| error.to_string())?;
 
-    state
-        .ipc_client
-        .cleanup_transcript(&transcript, "engineering", &config.models.llm_model)
-        .map_err(|error| error.to_string())
+    let ipc = state.ipc_client.clone();
+    let model = config.models.llm_model.clone();
+    // ponytail: cleanup is blocking std::io over the IPC child; keep it off the
+    // async worker so the UI doesn't freeze for the seconds Ollama can take.
+    tauri::async_runtime::spawn_blocking(move || {
+        ipc.cleanup_transcript(&transcript, "engineering", &model)
+    })
+    .await
+    .map_err(|join_err| join_err.to_string())?
+    .map_err(|error| error.to_string())
 }
 
 #[tauri::command]

@@ -1,5 +1,6 @@
 import { useEffect, useState, useTransition } from 'react';
 import { invoke } from '@tauri-apps/api/core';
+import { listen, type UnlistenFn } from '@tauri-apps/api/event';
 import {
   Activity,
   ArrowUpRight,
@@ -134,6 +135,50 @@ export default function App() {
       isMounted = false;
     };
   }, [setPartial, setStatus]);
+
+  // Hotkey-driven events from the Rust push-to-talk flow. The listener is
+  // attached only in Tauri; the browser preview has no global hotkey path.
+  useEffect(() => {
+    if (runtimeMode !== 'tauri') return;
+    const unlistens: UnlistenFn[] = [];
+    let cancelled = false;
+
+    void (async () => {
+      const subs = [
+        listen<string>('voicepilot:status', (event) => {
+          const value = event.payload;
+          setStatus(
+            value === 'listening'
+              ? 'listening'
+              : value === 'processing'
+                ? 'processing'
+                : value === 'typing'
+                  ? 'typing'
+                  : value === 'complete'
+                    ? 'complete'
+                    : 'idle',
+          );
+        }),
+        listen<string>('voicepilot:final', (event) => setFinal(event.payload)),
+        listen<string>('voicepilot:cleaned', (event) => setCleaned(event.payload)),
+        listen<string>('voicepilot:error', (event) =>
+          setErrorMessage(event.payload),
+        ),
+      ];
+      for (const sub of subs) {
+        // eslint-disable-next-line no-await-in-loop
+        unlistens.push(await sub);
+      }
+      if (cancelled) {
+        unlistens.splice(0).forEach((unlisten) => unlisten());
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+      unlistens.splice(0).forEach((unlisten) => unlisten());
+    };
+  }, [runtimeMode, setStatus, setFinal, setCleaned]);
 
   const refreshOllama = () => {
     startRefresh(() => {
