@@ -3,10 +3,14 @@ use crate::models::{
     ipc::{IpcRequest, IpcResponse},
 };
 use std::env;
-use std::io::{BufRead, BufReader, Write};
+use std::io::{Read, Write};
 use std::path::{Path, PathBuf};
 use std::process::{Child, ChildStdin, ChildStdout, Command, Stdio};
 use std::sync::Mutex;
+
+const MAX_FRAME_LEN: u32 = 64 * 1024 * 1024;
+
+const PROTOCOL_VERSION: u32 = 1;
 
 pub struct IpcClient {
     inner: Mutex<IpcProcess>,
@@ -15,43 +19,15 @@ pub struct IpcClient {
 struct IpcProcess {
     child: Child,
     stdin: ChildStdin,
-    stdout: BufReader<ChildStdout>,
+    stdout: ChildStdout,
     next_request_id: u64,
 }
 
 impl IpcClient {
     pub fn spawn() -> Result<Self, VoicePilotError> {
-        let repo_root = repository_root();
-        let python = python_executable(&repo_root);
-        let python_path = repo_root.join("inference/src");
-
-        let mut child = Command::new(&python)
-            .arg("-m")
-            .arg("voicepilot_inference.ipc_server")
-            .current_dir(&repo_root)
-            .env("PYTHONPATH", merged_python_path(&python_path))
-            .stdin(Stdio::piped())
-            .stdout(Stdio::piped())
-            .stderr(Stdio::inherit())
-            .spawn()
-            .map_err(|error| VoicePilotError::InferenceUnavailable(error.to_string()))?;
-
-        let stdin = child
-            .stdin
-            .take()
-            .ok_or_else(|| VoicePilotError::InferenceUnavailable("missing child stdin".into()))?;
-        let stdout = child
-            .stdout
-            .take()
-            .ok_or_else(|| VoicePilotError::InferenceUnavailable("missing child stdout".into()))?;
-
+        let process = spawn_process()?;
         let client = Self {
-            inner: Mutex::new(IpcProcess {
-                child,
-                stdin,
-                stdout: BufReader::new(stdout),
-                next_request_id: 1,
-            }),
+            inner: Mutex::new(process),
         };
 
         let status = client.health_check()?;
@@ -69,7 +45,18 @@ impl IpcClient {
         let response = self.send(IpcRequest::HealthCheck { request_id })?;
 
         match response {
-            IpcResponse::HealthStatus { status, .. } => Ok(status),
+            IpcResponse::HealthStatus {
+                status,
+                protocol_version,
+                ..
+            } => {
+                if protocol_version != PROTOCOL_VERSION {
+                    return Err(VoicePilotError::InferenceUnavailable(format!(
+                        "protocol version mismatch: rust={PROTOCOL_VERSION}, python={protocol_version}"
+                    )));
+                }
+                Ok(status)
+            }
             IpcResponse::Error { message, .. } => {
                 Err(VoicePilotError::InferenceUnavailable(message))
             }
@@ -146,38 +133,26 @@ impl IpcClient {
             .lock()
             .map_err(|_| VoicePilotError::InferenceUnavailable("ipc client lock poisoned".into()))?;
 
-        if let Some(status) = process
+        if process
             .child
             .try_wait()
             .map_err(|error| VoicePilotError::InferenceUnavailable(error.to_string()))?
+            .is_some()
         {
-            return Err(VoicePilotError::InferenceUnavailable(format!(
-                "inference bridge exited unexpectedly: {status}"
-            )));
+            // ponytail: one restart attempt per crash, no backoff/retry budget.
+            // Add exponential backoff + crash-loop detection if restarts get noisy.
+            *process = spawn_process()?;
         }
 
-        let payload = serde_json::to_string(&request)
+        let payload = serde_json::to_vec(&request)
             .map_err(|error| VoicePilotError::InferenceUnavailable(error.to_string()))?;
-        process
-            .stdin
-            .write_all(payload.as_bytes())
-            .and_then(|_| process.stdin.write_all(b"\n"))
-            .and_then(|_| process.stdin.flush())
+        write_frame(&mut process.stdin, &payload)
             .map_err(|error| VoicePilotError::InferenceUnavailable(error.to_string()))?;
 
-        let mut line = String::new();
-        let read = process
-            .stdout
-            .read_line(&mut line)
+        let frame = read_frame(&mut process.stdout)
             .map_err(|error| VoicePilotError::InferenceUnavailable(error.to_string()))?;
 
-        if read == 0 {
-            return Err(VoicePilotError::InferenceUnavailable(
-                "inference bridge closed stdout".into(),
-            ));
-        }
-
-        let response: IpcResponse = serde_json::from_str(line.trim())
+        let response: IpcResponse = serde_json::from_slice(&frame)
             .map_err(|error| VoicePilotError::InferenceUnavailable(error.to_string()))?;
 
         if response.request_id() != request_id {
@@ -189,6 +164,18 @@ impl IpcClient {
 
         Ok(response)
     }
+
+    #[cfg(test)]
+    fn kill_for_test(&self) {
+        let mut process = self.inner.lock().expect("lock should not be poisoned");
+        let _ = process.child.kill();
+        let _ = process.child.wait();
+    }
+
+    #[cfg(test)]
+    fn child_pid(&self) -> u32 {
+        self.inner.lock().expect("lock should not be poisoned").child.id()
+    }
 }
 
 impl Drop for IpcProcess {
@@ -196,6 +183,60 @@ impl Drop for IpcProcess {
         let _ = self.child.kill();
         let _ = self.child.wait();
     }
+}
+
+fn spawn_process() -> Result<IpcProcess, VoicePilotError> {
+    let repo_root = repository_root();
+    let python = python_executable(&repo_root);
+    let python_path = repo_root.join("inference/src");
+
+    let mut child = Command::new(&python)
+        .arg("-m")
+        .arg("voicepilot_inference.ipc_server")
+        .current_dir(&repo_root)
+        .env("PYTHONPATH", merged_python_path(&python_path))
+        .stdin(Stdio::piped())
+        .stdout(Stdio::piped())
+        .stderr(Stdio::inherit())
+        .spawn()
+        .map_err(|error| VoicePilotError::InferenceUnavailable(error.to_string()))?;
+
+    let stdin = child
+        .stdin
+        .take()
+        .ok_or_else(|| VoicePilotError::InferenceUnavailable("missing child stdin".into()))?;
+    let stdout = child
+        .stdout
+        .take()
+        .ok_or_else(|| VoicePilotError::InferenceUnavailable("missing child stdout".into()))?;
+
+    Ok(IpcProcess {
+        child,
+        stdin,
+        stdout,
+        next_request_id: 1,
+    })
+}
+
+fn write_frame(stdin: &mut ChildStdin, payload: &[u8]) -> std::io::Result<()> {
+    let len = u32::try_from(payload.len()).expect("ipc payload should fit u32 length prefix");
+    stdin.write_all(&len.to_be_bytes())?;
+    stdin.write_all(payload)?;
+    stdin.flush()
+}
+
+fn read_frame(stdout: &mut ChildStdout) -> std::io::Result<Vec<u8>> {
+    let mut len_bytes = [0u8; 4];
+    stdout.read_exact(&mut len_bytes)?;
+    let len = u32::from_be_bytes(len_bytes);
+    if len > MAX_FRAME_LEN {
+        return Err(std::io::Error::other(format!(
+            "ipc frame length {len} exceeds max {MAX_FRAME_LEN}"
+        )));
+    }
+    let mut payload = vec![0u8; len as usize];
+    stdout.read_exact(&mut payload)?;
+    Ok(payload)
 }
 
 fn repository_root() -> PathBuf {
@@ -245,11 +286,53 @@ fn merged_python_path(extra_path: &Path) -> String {
 #[cfg(test)]
 mod tests {
     use super::IpcClient;
+    use std::time::Instant;
 
     #[test]
     fn bridge_starts_and_answers_health() {
         let client = IpcClient::spawn().expect("bridge should start");
         let status = client.health_check().expect("health should respond");
+        assert_eq!(status, "ok");
+    }
+
+    #[test]
+    fn audio_chunk_round_trip_under_50ms() {
+        let client = IpcClient::spawn().expect("bridge should start");
+        let pcm = vec![0u8; 3200]; // 100ms of 16kHz mono 16-bit silence
+
+        let start = Instant::now();
+        let text = client
+            .send_audio_chunk(pcm)
+            .expect("audio chunk should round-trip");
+        let elapsed = start.elapsed();
+
+        assert!(text.is_some());
+        assert!(
+            elapsed.as_millis() < 50,
+            "audio chunk round trip took {elapsed:?}"
+        );
+    }
+
+    #[test]
+    fn drop_kills_child_process() {
+        let client = IpcClient::spawn().expect("bridge should start");
+        let pid = client.child_pid();
+        drop(client);
+
+        assert!(
+            !std::path::Path::new(&format!("/proc/{pid}")).exists(),
+            "child process {pid} should be reaped after Drop"
+        );
+    }
+
+    #[test]
+    fn bridge_restarts_after_crash() {
+        let client = IpcClient::spawn().expect("bridge should start");
+        client.kill_for_test();
+
+        let status = client
+            .health_check()
+            .expect("client should transparently restart the bridge");
         assert_eq!(status, "ok");
     }
 }
