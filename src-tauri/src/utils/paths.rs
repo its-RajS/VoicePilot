@@ -1,4 +1,5 @@
 use directories::ProjectDirs;
+use std::path::PathBuf;
 
 pub fn config_dir() -> PathBuf {
     if std::env::var("VOICEPILOT_DEV").is_ok() {

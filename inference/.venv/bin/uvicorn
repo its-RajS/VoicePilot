@@ -1,6 +1,0 @@
-#!/home/its-raj/Projects/Main/VoicePilot/docs/voicepilot-scaffold/voicepilot/inference/.venv/bin/python3
-import sys
-from uvicorn.main import main
-if __name__ == '__main__':
-    sys.argv[0] = sys.argv[0].removesuffix('.exe')
-    sys.exit(main())

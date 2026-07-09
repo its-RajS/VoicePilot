@@ -10,7 +10,7 @@ VoicePilot lets you hold a global hotkey, speak naturally, clean the transcript 
 - React + TypeScript settings and overlay UI
 - Rust services for hotkeys, audio capture, tray, config, and typing
 - Python FastAPI inference service for VAD, STT, and prompt cleanup orchestration
-- Local-first defaults: NVIDIA Parakeet STT, Silero VAD, Ollama + Qwen for cleanup
+- Local-first defaults: NVIDIA Parakeet 0.6B STT, Silero VAD, Ollama-hosted Qwen 3 Instruct for cleanup
 
 ## Project layout
 
@@ -22,6 +22,13 @@ config/      SQLite schema and default settings
 scripts/     install/build/dev helpers
 docs/        architecture and development notes
 ```
+
+## Development baseline
+
+- Linux desktop with PipeWire or PulseAudio
+- `xdotool` available for typing simulation
+- `pkg-config` and Linux desktop development headers installed for Tauri/Rust checks
+- Target hardware baseline: Intel i5-class CPU, Iris Xe-class integrated graphics, 20 GB RAM
 
 ## Development bootstrap
 

@@ -1,0 +1,10 @@
+models/
+target/
+node_modules/
+.env
+.sandcastle/.env
+.sandcastle/logs/*
+!.sandcastle/logs/.gitkeep
+inference/.venv/
+__pycache__/
+*.pyc

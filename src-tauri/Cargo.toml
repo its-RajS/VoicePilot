@@ -7,6 +7,9 @@ edition = "2021"
 name = "voicepilot_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
 [dependencies]
 tauri = { version = "2", features = [] }
 tauri-plugin-log = "2"
@@ -20,3 +23,4 @@ directories = "5"
 cpal = "0.15"
 rdev = "0.5"
 tokio-tungstenite = "0.24"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
