@@ -21,7 +21,13 @@ pub fn run() {
             });
             Ok(())
         })
-        .plugin(tauri_plugin_log::Builder::new().build())
+        .plugin(
+            tauri_plugin_log::Builder::new()
+                // ponytail: default is Trace, which floods the console with reqwest
+                // noise and hides real signal. Info keeps app logs, drops reqwest DEBUG/TRACE.
+                .level(tauri_plugin_log::log::LevelFilter::Info)
+                .build(),
+        )
         .invoke_handler(tauri::generate_handler![
             commands::health,
             commands::get_config,

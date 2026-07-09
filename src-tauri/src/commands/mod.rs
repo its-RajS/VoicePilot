@@ -44,7 +44,12 @@ pub async fn set_llm_model(model: String) -> Result<(), String> {
 
 #[tauri::command]
 pub async fn pull_ollama_model(model: String) -> Result<(), String> {
-    OllamaService::default().pull_model(&model)
+    // ponytail: reqwest::blocking::Client spins up its own tokio runtime; dropping it
+    // inside an async worker panics ("Cannot drop a runtime in a context where blocking
+    // is not allowed"). Run the whole construct+use+drop on a blocking thread.
+    tauri::async_runtime::spawn_blocking(move || OllamaService::default().pull_model(&model))
+        .await
+        .map_err(|join_err| join_err.to_string())?
 }
 
 #[tauri::command]
@@ -58,7 +63,10 @@ pub async fn get_ollama_status(state: State<'_, VoicePilotState>) -> Result<Olla
 
 #[tauri::command]
 pub async fn refresh_ollama_status(state: State<'_, VoicePilotState>) -> Result<OllamaStatus, String> {
-    let latest = OllamaService::default().discover();
+    // ponytail: see pull_ollama_model — keep the blocking reqwest client off the async runtime.
+    let latest = tauri::async_runtime::spawn_blocking(|| OllamaService::default().discover())
+        .await
+        .map_err(|join_err| join_err.to_string())?;
     let mut status = state
         .ollama_status
         .lock()
