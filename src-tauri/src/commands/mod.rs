@@ -25,10 +25,26 @@ pub async fn cleanup_transcript(
     transcript: String,
     state: State<'_, VoicePilotState>,
 ) -> Result<String, String> {
+    let config = ConfigService::for_app()
+        .and_then(|service| service.load())
+        .map_err(|error| error.to_string())?;
+
     state
         .ipc_client
-        .cleanup_transcript(&transcript, "engineering")
+        .cleanup_transcript(&transcript, "engineering", &config.models.llm_model)
         .map_err(|error| error.to_string())
+}
+
+#[tauri::command]
+pub async fn set_llm_model(model: String) -> Result<(), String> {
+    ConfigService::for_app()
+        .and_then(|service| service.set_llm_model(&model))
+        .map_err(|error| error.to_string())
+}
+
+#[tauri::command]
+pub async fn pull_ollama_model(model: String) -> Result<(), String> {
+    OllamaService::default().pull_model(&model)
 }
 
 #[tauri::command]

@@ -4,6 +4,7 @@ import {
   Activity,
   ArrowUpRight,
   AudioLines,
+  Download,
   LoaderCircle,
   Mic,
   RefreshCw,
@@ -33,6 +34,7 @@ type OllamaStatus = {
 type RuntimeMode = 'tauri' | 'browser';
 
 const DEMO_PROMPT = 'Refactor the Linux audio capture path and explain the hotkey edge cases.';
+const RECOMMENDED_MODEL = 'qwen3:8b';
 
 const formatHotkey = (config: VoicePilotConfig | null) =>
   config ? [...config.hotkey.modifiers, config.hotkey.key].join(' + ') : 'Ctrl + Space';
@@ -68,8 +70,11 @@ export default function App() {
   const [runtimeMode, setRuntimeMode] = useState<RuntimeMode>('browser');
   const [notes, setNotes] = useState<string>(DEMO_PROMPT);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [selectedModel, setSelectedModel] = useState<string>(RECOMMENDED_MODEL);
+  const [pullConfirming, setPullConfirming] = useState(false);
   const [isRefreshing, startRefresh] = useTransition();
   const [isCleaning, startCleaning] = useTransition();
+  const [isPulling, startPull] = useTransition();
 
   useEffect(() => {
     let isMounted = true;
@@ -110,6 +115,7 @@ export default function App() {
 
         if (!isMounted) return;
         setConfig(loadedConfig);
+        setSelectedModel(loadedConfig.models.llmModel);
         setBridgeHealth(health === 'ok' ? 'Live' : health);
         setOllamaStatus(loadedOllamaStatus);
         setPartial('Voice bridge ready. Hold the hotkey, speak naturally, then review cleanup.');
@@ -136,6 +142,27 @@ export default function App() {
         try {
           const nextStatus = await invoke<OllamaStatus>('refresh_ollama_status');
           setOllamaStatus(nextStatus);
+          setErrorMessage(null);
+        } catch (error) {
+          setErrorMessage(error instanceof Error ? error.message : String(error));
+        }
+      })();
+    });
+  };
+
+  const pullRecommended = () => {
+    setPullConfirming(false);
+    startPull(() => {
+      void (async () => {
+        if (runtimeMode !== 'tauri') return;
+        try {
+          await invoke('pull_ollama_model', { model: RECOMMENDED_MODEL });
+          const nextStatus = await invoke<OllamaStatus>('refresh_ollama_status');
+          setOllamaStatus(nextStatus);
+          await invoke('set_llm_model', { model: RECOMMENDED_MODEL });
+          setSelectedModel(RECOMMENDED_MODEL);
+          const loadedConfig = await invoke<VoicePilotConfig>('get_config');
+          setConfig(loadedConfig);
           setErrorMessage(null);
         } catch (error) {
           setErrorMessage(error instanceof Error ? error.message : String(error));
@@ -171,7 +198,12 @@ export default function App() {
     });
   };
 
-  const isBusy = isRefreshing || isCleaning;
+  const isBusy = isRefreshing || isCleaning || isPulling;
+  const modelOptions = (() => {
+    const available = ollamaStatus?.models.map((model) => model.name) ?? [];
+    const configured = selectedModel || RECOMMENDED_MODEL;
+    return available.includes(configured) ? available : [configured, ...available];
+  })();
   const statusTone =
     status === 'idle'
       ? 'Quiet'
@@ -304,18 +336,104 @@ export default function App() {
               <strong>{ollamaStatus?.recommended_model_present ? 'Qwen ready' : 'Needs pull'}</strong>
             </div>
 
-            <div className="model-list">
-              {(ollamaStatus?.models.length ?? 0) > 0 ? (
-                ollamaStatus?.models.slice(0, 4).map((model) => (
-                  <div key={model.name} className="model-pill">
-                    <span>{model.name}</span>
-                    <small>{formatBytes(model.size)}</small>
+            {runtimeMode === 'tauri' && ollamaStatus && !ollamaStatus.api_reachable ? (
+              <div className="setup-card">
+                <p className="card-label">Setup</p>
+                {ollamaStatus.error ? <p className="empty-copy">{ollamaStatus.error}</p> : null}
+                <ol className="setup-steps">
+                  <li>
+                    Install Ollama: <code>curl -fsSL https://ollama.com/install.sh | sh</code>
+                  </li>
+                  <li>
+                    Start the service: <code>ollama serve</code>
+                  </li>
+                  <li>
+                    Pull a model: <code>ollama pull {RECOMMENDED_MODEL}</code>
+                  </li>
+                </ol>
+              </div>
+            ) : null}
+
+            {ollamaStatus?.api_reachable && ollamaStatus.models.length > 0 ? (
+              <label className="feature-row model-select" htmlFor="llm-model">
+                <span>Active model</span>
+                <select
+                  id="llm-model"
+                  value={selectedModel}
+                  disabled={isBusy}
+                  onChange={(event) => {
+                    const model = event.target.value;
+                    setSelectedModel(model);
+                    void (async () => {
+                      if (runtimeMode !== 'tauri') return;
+                      try {
+                        await invoke('set_llm_model', { model });
+                        const loadedConfig = await invoke<VoicePilotConfig>('get_config');
+                        setConfig(loadedConfig);
+                        setErrorMessage(null);
+                      } catch (error) {
+                        setErrorMessage(error instanceof Error ? error.message : String(error));
+                      }
+                    })();
+                  }}
+                >
+                  {modelOptions.map((model) => (
+                    <option key={model} value={model}>
+                      {model}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            ) : null}
+
+            {runtimeMode === 'tauri' && ollamaStatus?.api_reachable && !ollamaStatus.recommended_model_present ? (
+              pullConfirming ? (
+                <div className="pull-confirm">
+                  <p className="empty-copy">Download {RECOMMENDED_MODEL}? This can take several minutes.</p>
+                  <div className="pull-confirm-actions">
+                    <button className="pull-button" onClick={pullRecommended} type="button" disabled={isBusy}>
+                      {isPulling ? <LoaderCircle className="spin" size={16} /> : <Download size={16} />}
+                      Confirm download
+                    </button>
+                    <button
+                      className="ghost-button"
+                      onClick={() => setPullConfirming(false)}
+                      type="button"
+                      disabled={isBusy}
+                    >
+                      Cancel
+                    </button>
                   </div>
-                ))
+                </div>
               ) : (
-                <p className="empty-copy">{ollamaStatus?.error ?? 'No local Ollama models discovered yet.'}</p>
-              )}
-            </div>
+                <button
+                  className="ghost-button pull-trigger"
+                  onClick={() => setPullConfirming(true)}
+                  type="button"
+                  disabled={isBusy}
+                >
+                  <Download size={16} />
+                  Pull {RECOMMENDED_MODEL}
+                </button>
+              )
+            ) : null}
+
+            {ollamaStatus?.api_reachable ? (
+              <div className="model-list">
+                {ollamaStatus.models.length > 0 ? (
+                  ollamaStatus.models.slice(0, 4).map((model) => (
+                    <div key={model.name} className="model-pill">
+                      <span>{model.name}</span>
+                      <small>{formatBytes(model.size)}</small>
+                    </div>
+                  ))
+                ) : (
+                  <p className="empty-copy">No models yet — pull {RECOMMENDED_MODEL} to begin.</p>
+                )}
+              </div>
+            ) : runtimeMode !== 'tauri' ? (
+              <p className="empty-copy">{ollamaStatus?.error ?? 'Launch inside Tauri to query the local runtime.'}</p>
+            ) : null}
           </section>
 
           <section className="feature-card">

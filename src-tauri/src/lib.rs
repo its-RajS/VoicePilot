@@ -27,7 +27,9 @@ pub fn run() {
             commands::get_config,
             commands::cleanup_transcript,
             commands::get_ollama_status,
-            commands::refresh_ollama_status
+            commands::refresh_ollama_status,
+            commands::set_llm_model,
+            commands::pull_ollama_model
         ])
         .run(tauri::generate_context!())
         .expect("error while running VoicePilot");

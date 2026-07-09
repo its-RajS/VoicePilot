@@ -1,6 +1,7 @@
 use crate::models::ollama::{OllamaModel, OllamaStatus};
 use reqwest::blocking::Client;
 use serde::Deserialize;
+use std::env;
 use std::process::Command;
 use std::time::Duration;
 
@@ -24,7 +25,27 @@ impl OllamaService {
     }
 
     pub fn default() -> Self {
-        Self::new(DEFAULT_OLLAMA_URL)
+        let api_url = env::var("OLLAMA_HOST").unwrap_or_else(|_| DEFAULT_OLLAMA_URL.to_string());
+        Self::new(api_url)
+    }
+
+    pub fn pull_model(&self, model: &str) -> Result<(), String> {
+        let output = Command::new("ollama")
+            .arg("pull")
+            .arg(model)
+            .output()
+            .map_err(|error| error.to_string())?;
+
+        if !output.status.success() {
+            let stderr = String::from_utf8_lossy(&output.stderr).trim().to_owned();
+            return Err(if stderr.is_empty() {
+                format!("ollama pull {model} exited with {}", output.status)
+            } else {
+                stderr
+            });
+        }
+
+        Ok(())
     }
 
     pub fn discover(&self) -> OllamaStatus {

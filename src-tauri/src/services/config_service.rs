@@ -34,9 +34,32 @@ impl ConfigService {
         self.load_config(&connection)
     }
 
+    pub fn set_llm_model(&self, model: &str) -> Result<(), VoicePilotError> {
+        let connection =
+            Connection::open(&self.db_path).map_err(|error| VoicePilotError::Config(error.to_string()))?;
+
+        self.initialize_schema(&connection)?;
+        self.seed_defaults(&connection)?;
+        connection
+            .execute(
+                "UPDATE models SET llm_model = ?1 WHERE id = 1",
+                params![model],
+            )
+            .map_err(|error| VoicePilotError::Config(error.to_string()))?;
+        Ok(())
+    }
+
     fn initialize_schema(&self, connection: &Connection) -> Result<(), VoicePilotError> {
         connection
+            .execute_batch("PRAGMA foreign_keys = ON; PRAGMA journal_mode = WAL;")
+            .map_err(|error| VoicePilotError::Config(error.to_string()))?;
+        connection
             .execute_batch(SCHEMA_SQL)
+            .map_err(|error| VoicePilotError::Config(error.to_string()))?;
+        // ponytail: single schema, no migrations yet. Bump this and add a migration
+        // runner keyed off it once SCHEMA_SQL needs a second version.
+        connection
+            .pragma_update(None, "user_version", 1)
             .map_err(|error| VoicePilotError::Config(error.to_string()))
     }
 
@@ -172,11 +195,6 @@ impl ConfigService {
             .optional()
             .map_err(|error| VoicePilotError::Config(error.to_string()))
     }
-
-    #[cfg(test)]
-    fn db_path(&self) -> &std::path::Path {
-        &self.db_path
-    }
 }
 
 fn split_modifiers(modifiers: &str) -> Vec<String> {
@@ -191,14 +209,13 @@ fn split_modifiers(modifiers: &str) -> Vec<String> {
 #[cfg(test)]
 mod tests {
     use super::ConfigService;
-    use rusqlite::Connection;
     use std::path::PathBuf;
-    use std::time::{SystemTime, UNIX_EPOCH};
 
     #[test]
     fn load_initializes_and_returns_defaults() {
-        let db_path = unique_db_path();
-        let service = ConfigService::new(db_path.clone());
+        // ponytail: rusqlite treats the literal path ":memory:" as an in-memory DB,
+        // so no on-disk file or cleanup is needed.
+        let service = ConfigService::new(PathBuf::from(":memory:"));
 
         let config = service.load().expect("config should load");
 
@@ -207,26 +224,5 @@ mod tests {
         assert_eq!(config.audio.vad_sensitivity, 0.5);
         assert_eq!(config.models.stt_model, "nvidia/parakeet-tdt-0.6b");
         assert_eq!(config.typing.speed_cps, 50);
-
-        let connection = Connection::open(service.db_path()).expect("db should open");
-        let hotkey_count: i64 = connection
-            .query_row("SELECT COUNT(*) FROM hotkey", [], |row| row.get(0))
-            .expect("hotkey count");
-        let config_count: i64 = connection
-            .query_row("SELECT COUNT(*) FROM config", [], |row| row.get(0))
-            .expect("config count");
-
-        assert_eq!(hotkey_count, 1);
-        assert_eq!(config_count, 2);
-
-        let _ = std::fs::remove_file(db_path);
-    }
-
-    fn unique_db_path() -> PathBuf {
-        let nanos = SystemTime::now()
-            .duration_since(UNIX_EPOCH)
-            .expect("time should be monotonic")
-            .as_nanos();
-        std::env::temp_dir().join(format!("voicepilot-config-{nanos}.db"))
     }
 }

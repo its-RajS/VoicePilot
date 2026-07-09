@@ -70,7 +70,9 @@ def main() -> int:
             elif request_type == "cleanup_request":
                 result = asyncio.run(
                     pipeline.cleanup_transcript(
-                        request.get("transcript", ""), request.get("mode", "engineering")
+                        request.get("transcript", ""),
+                        request.get("mode", "engineering"),
+                        request.get("model"),
                     )
                 )
                 emit(

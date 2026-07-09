@@ -1,6 +1,8 @@
-models/
+/models/
 target/
 node_modules/
+dist/
+*.db
 .env
 .sandcastle/.env
 .sandcastle/logs/*

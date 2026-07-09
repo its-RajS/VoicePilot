@@ -11,10 +11,13 @@ pub struct AppConfig {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct HotkeyConfig { pub modifiers: Vec<String>, pub key: String, pub mode: String }
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct AudioConfig { pub device_id: Option<String>, pub vad_sensitivity: f32 }
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ModelConfig { pub stt_model: String, pub llm_model: String }
 #[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct TypingConfig { pub mode: String, pub speed_cps: u32 }
 
 impl Default for AppConfig {

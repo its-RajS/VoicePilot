@@ -99,12 +99,18 @@ impl IpcClient {
         }
     }
 
-    pub fn cleanup_transcript(&self, transcript: &str, mode: &str) -> Result<String, VoicePilotError> {
+    pub fn cleanup_transcript(
+        &self,
+        transcript: &str,
+        mode: &str,
+        model: &str,
+    ) -> Result<String, VoicePilotError> {
         let request_id = self.next_request_id()?;
         let response = self.send(IpcRequest::CleanupRequest {
             request_id,
             transcript: transcript.to_owned(),
             mode: mode.to_owned(),
+            model: model.to_owned(),
         })?;
 
         match response {
