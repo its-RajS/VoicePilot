@@ -39,3 +39,13 @@ VoicePilot is a local-first Linux desktop assistant that captures speech, cleans
 - Sandcastle prompt and env must be project-specific and present.
 - Root `.gitignore` must exclude `models/`, `target/`, `node_modules/`, `.env`, `.sandcastle/.env`, and `inference/.venv/`.
 - Document hardware assumptions and Linux desktop prerequisites in `docs/CONTEXT.md`.
+
+## Agent skills
+
+### Issue tracker
+
+Not configured — no tracker in use. `to-issues`, `triage`, `to-prd`, and `qa` skills are unconfigured until this changes.
+
+### Domain docs
+
+Single-context: `docs/CONTEXT.md` (not repo root), no `docs/adr/` yet. See `docs/agents/domain.md`.
