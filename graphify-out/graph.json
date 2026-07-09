@@ -2077,7 +2077,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests",
-      "community": 183,
+      "community": 150,
       "norm_label": "acl-manifests.json"
     },
     {
@@ -2158,7 +2158,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_core_app",
-      "community": 183,
+      "community": 53,
       "norm_label": "core:app"
     },
     {
@@ -2185,7 +2185,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_app_hide",
-      "community": 0,
+      "community": 124,
       "norm_label": "allow-app-hide"
     },
     {
@@ -2194,7 +2194,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_app_hide_identifier",
-      "community": 0,
+      "community": 124,
       "norm_label": "identifier"
     },
     {
@@ -2203,7 +2203,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_app_hide_description",
-      "community": 0,
+      "community": 124,
       "norm_label": "description"
     },
     {
@@ -2212,7 +2212,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_app_hide_commands",
-      "community": 0,
+      "community": 124,
       "norm_label": "commands"
     },
     {
@@ -2221,7 +2221,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_commands_allow",
-      "community": 55,
+      "community": 79,
       "norm_label": "allow"
     },
     {
@@ -2230,7 +2230,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_commands_deny",
-      "community": 0,
+      "community": 124,
       "norm_label": "deny"
     },
     {
@@ -2239,7 +2239,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_app_show",
-      "community": 55,
+      "community": 8,
       "norm_label": "allow-app-show"
     },
     {
@@ -2248,7 +2248,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_app_show_identifier",
-      "community": 55,
+      "community": 8,
       "norm_label": "identifier"
     },
     {
@@ -2257,7 +2257,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_app_show_description",
-      "community": 55,
+      "community": 8,
       "norm_label": "description"
     },
     {
@@ -2266,7 +2266,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_app_show_commands",
-      "community": 55,
+      "community": 8,
       "norm_label": "commands"
     },
     {
@@ -2347,7 +2347,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_fetch_data_store_identifiers",
-      "community": 128,
+      "community": 8,
       "norm_label": "allow-fetch-data-store-identifiers"
     },
     {
@@ -2356,7 +2356,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_fetch_data_store_identifiers_identifier",
-      "community": 128,
+      "community": 8,
       "norm_label": "identifier"
     },
     {
@@ -2365,7 +2365,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_fetch_data_store_identifiers_description",
-      "community": 128,
+      "community": 8,
       "norm_label": "description"
     },
     {
@@ -2374,7 +2374,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_fetch_data_store_identifiers_commands",
-      "community": 128,
+      "community": 8,
       "norm_label": "commands"
     },
     {
@@ -2491,7 +2491,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_remove_data_store",
-      "community": 8,
+      "community": 143,
       "norm_label": "allow-remove-data-store"
     },
     {
@@ -2500,7 +2500,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_remove_data_store_identifier",
-      "community": 8,
+      "community": 143,
       "norm_label": "identifier"
     },
     {
@@ -2509,7 +2509,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_remove_data_store_description",
-      "community": 8,
+      "community": 143,
       "norm_label": "description"
     },
     {
@@ -2518,7 +2518,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_remove_data_store_commands",
-      "community": 8,
+      "community": 143,
       "norm_label": "commands"
     },
     {
@@ -2527,7 +2527,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_remove_listener",
-      "community": 8,
+      "community": 146,
       "norm_label": "allow-remove-listener"
     },
     {
@@ -2536,7 +2536,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_remove_listener_identifier",
-      "community": 8,
+      "community": 146,
       "norm_label": "identifier"
     },
     {
@@ -2545,7 +2545,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_remove_listener_description",
-      "community": 8,
+      "community": 146,
       "norm_label": "description"
     },
     {
@@ -2554,7 +2554,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_remove_listener_commands",
-      "community": 8,
+      "community": 146,
       "norm_label": "commands"
     },
     {
@@ -2563,7 +2563,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_set_app_theme",
-      "community": 139,
+      "community": 8,
       "norm_label": "allow-set-app-theme"
     },
     {
@@ -2572,7 +2572,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_set_app_theme_identifier",
-      "community": 139,
+      "community": 8,
       "norm_label": "identifier"
     },
     {
@@ -2581,7 +2581,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_set_app_theme_description",
-      "community": 139,
+      "community": 8,
       "norm_label": "description"
     },
     {
@@ -2590,7 +2590,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_set_app_theme_commands",
-      "community": 139,
+      "community": 8,
       "norm_label": "commands"
     },
     {
@@ -2635,7 +2635,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_supports_multiple_windows",
-      "community": 8,
+      "community": 156,
       "norm_label": "allow-supports-multiple-windows"
     },
     {
@@ -2644,7 +2644,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_supports_multiple_windows_identifier",
-      "community": 8,
+      "community": 156,
       "norm_label": "identifier"
     },
     {
@@ -2653,7 +2653,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_supports_multiple_windows_description",
-      "community": 8,
+      "community": 156,
       "norm_label": "description"
     },
     {
@@ -2662,7 +2662,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_supports_multiple_windows_commands",
-      "community": 8,
+      "community": 156,
       "norm_label": "commands"
     },
     {
@@ -2671,7 +2671,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_tauri_version",
-      "community": 8,
+      "community": 157,
       "norm_label": "allow-tauri-version"
     },
     {
@@ -2680,7 +2680,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_tauri_version_identifier",
-      "community": 8,
+      "community": 157,
       "norm_label": "identifier"
     },
     {
@@ -2689,7 +2689,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_tauri_version_description",
-      "community": 8,
+      "community": 157,
       "norm_label": "description"
     },
     {
@@ -2698,7 +2698,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_tauri_version_commands",
-      "community": 8,
+      "community": 157,
       "norm_label": "commands"
     },
     {
@@ -2707,7 +2707,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_version",
-      "community": 8,
+      "community": 161,
       "norm_label": "allow-version"
     },
     {
@@ -2716,7 +2716,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_version_identifier",
-      "community": 8,
+      "community": 161,
       "norm_label": "identifier"
     },
     {
@@ -2725,7 +2725,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_version_description",
-      "community": 8,
+      "community": 161,
       "norm_label": "description"
     },
     {
@@ -2734,7 +2734,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_version_commands",
-      "community": 8,
+      "community": 161,
       "norm_label": "commands"
     },
     {
@@ -2743,7 +2743,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_app_hide",
-      "community": 151,
+      "community": 124,
       "norm_label": "deny-app-hide"
     },
     {
@@ -2752,7 +2752,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_app_hide_identifier",
-      "community": 151,
+      "community": 124,
       "norm_label": "identifier"
     },
     {
@@ -2761,7 +2761,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_app_hide_description",
-      "community": 151,
+      "community": 124,
       "norm_label": "description"
     },
     {
@@ -2770,7 +2770,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_app_hide_commands",
-      "community": 151,
+      "community": 124,
       "norm_label": "commands"
     },
     {
@@ -2815,7 +2815,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_bundle_type",
-      "community": 8,
+      "community": 162,
       "norm_label": "deny-bundle-type"
     },
     {
@@ -2824,7 +2824,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_bundle_type_identifier",
-      "community": 8,
+      "community": 162,
       "norm_label": "identifier"
     },
     {
@@ -2833,7 +2833,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_bundle_type_description",
-      "community": 8,
+      "community": 162,
       "norm_label": "description"
     },
     {
@@ -2842,7 +2842,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_bundle_type_commands",
-      "community": 8,
+      "community": 162,
       "norm_label": "commands"
     },
     {
@@ -2851,7 +2851,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_default_window_icon",
-      "community": 155,
+      "community": 8,
       "norm_label": "deny-default-window-icon"
     },
     {
@@ -2860,7 +2860,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_default_window_icon_identifier",
-      "community": 155,
+      "community": 8,
       "norm_label": "identifier"
     },
     {
@@ -2869,7 +2869,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_default_window_icon_description",
-      "community": 155,
+      "community": 8,
       "norm_label": "description"
     },
     {
@@ -2878,7 +2878,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_default_window_icon_commands",
-      "community": 155,
+      "community": 8,
       "norm_label": "commands"
     },
     {
@@ -2995,7 +2995,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_register_listener",
-      "community": 166,
+      "community": 8,
       "norm_label": "deny-register-listener"
     },
     {
@@ -3004,7 +3004,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_register_listener_identifier",
-      "community": 166,
+      "community": 8,
       "norm_label": "identifier"
     },
     {
@@ -3013,7 +3013,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_register_listener_description",
-      "community": 166,
+      "community": 8,
       "norm_label": "description"
     },
     {
@@ -3022,7 +3022,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_register_listener_commands",
-      "community": 166,
+      "community": 8,
       "norm_label": "commands"
     },
     {
@@ -3031,7 +3031,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_remove_data_store",
-      "community": 167,
+      "community": 124,
       "norm_label": "deny-remove-data-store"
     },
     {
@@ -3040,7 +3040,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_remove_data_store_identifier",
-      "community": 167,
+      "community": 124,
       "norm_label": "identifier"
     },
     {
@@ -3049,7 +3049,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_remove_data_store_description",
-      "community": 167,
+      "community": 124,
       "norm_label": "description"
     },
     {
@@ -3058,7 +3058,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_remove_data_store_commands",
-      "community": 167,
+      "community": 124,
       "norm_label": "commands"
     },
     {
@@ -3103,7 +3103,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_set_app_theme",
-      "community": 8,
+      "community": 183,
       "norm_label": "deny-set-app-theme"
     },
     {
@@ -3112,7 +3112,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_set_app_theme_identifier",
-      "community": 8,
+      "community": 183,
       "norm_label": "identifier"
     },
     {
@@ -3121,7 +3121,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_set_app_theme_description",
-      "community": 8,
+      "community": 183,
       "norm_label": "description"
     },
     {
@@ -3130,7 +3130,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_set_app_theme_commands",
-      "community": 8,
+      "community": 183,
       "norm_label": "commands"
     },
     {
@@ -3139,7 +3139,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_set_dock_visibility",
-      "community": 162,
+      "community": 8,
       "norm_label": "deny-set-dock-visibility"
     },
     {
@@ -3148,7 +3148,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_set_dock_visibility_identifier",
-      "community": 162,
+      "community": 8,
       "norm_label": "identifier"
     },
     {
@@ -3157,7 +3157,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_set_dock_visibility_description",
-      "community": 162,
+      "community": 8,
       "norm_label": "description"
     },
     {
@@ -3166,7 +3166,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_set_dock_visibility_commands",
-      "community": 162,
+      "community": 8,
       "norm_label": "commands"
     },
     {
@@ -3283,7 +3283,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_core_app_permission_sets",
-      "community": 183,
+      "community": 53,
       "norm_label": "permission_sets"
     },
     {
@@ -3292,7 +3292,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_core_app_global_scope_schema",
-      "community": 183,
+      "community": 53,
       "norm_label": "global_scope_schema"
     },
     {
@@ -3301,7 +3301,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_core_event",
-      "community": 183,
+      "community": 53,
       "norm_label": "core:event"
     },
     {
@@ -3328,7 +3328,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_emit",
-      "community": 55,
+      "community": 79,
       "norm_label": "allow-emit"
     },
     {
@@ -3337,7 +3337,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_emit_identifier",
-      "community": 55,
+      "community": 79,
       "norm_label": "identifier"
     },
     {
@@ -3346,7 +3346,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_emit_description",
-      "community": 55,
+      "community": 79,
       "norm_label": "description"
     },
     {
@@ -3355,7 +3355,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_emit_commands",
-      "community": 55,
+      "community": 79,
       "norm_label": "commands"
     },
     {
@@ -3364,7 +3364,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_emit_to",
-      "community": 146,
+      "community": 79,
       "norm_label": "allow-emit-to"
     },
     {
@@ -3373,7 +3373,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_emit_to_identifier",
-      "community": 146,
+      "community": 79,
       "norm_label": "identifier"
     },
     {
@@ -3382,7 +3382,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_emit_to_description",
-      "community": 146,
+      "community": 79,
       "norm_label": "description"
     },
     {
@@ -3391,7 +3391,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_emit_to_commands",
-      "community": 146,
+      "community": 79,
       "norm_label": "commands"
     },
     {
@@ -3472,7 +3472,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_emit",
-      "community": 156,
+      "community": 79,
       "norm_label": "deny-emit"
     },
     {
@@ -3481,7 +3481,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_emit_identifier",
-      "community": 156,
+      "community": 79,
       "norm_label": "identifier"
     },
     {
@@ -3490,7 +3490,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_emit_description",
-      "community": 156,
+      "community": 79,
       "norm_label": "description"
     },
     {
@@ -3499,7 +3499,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_emit_commands",
-      "community": 156,
+      "community": 79,
       "norm_label": "commands"
     },
     {
@@ -3508,7 +3508,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_emit_to",
-      "community": 157,
+      "community": 79,
       "norm_label": "deny-emit-to"
     },
     {
@@ -3517,7 +3517,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_emit_to_identifier",
-      "community": 157,
+      "community": 79,
       "norm_label": "identifier"
     },
     {
@@ -3526,7 +3526,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_emit_to_description",
-      "community": 157,
+      "community": 79,
       "norm_label": "description"
     },
     {
@@ -3535,7 +3535,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_emit_to_commands",
-      "community": 157,
+      "community": 79,
       "norm_label": "commands"
     },
     {
@@ -3544,7 +3544,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_listen",
-      "community": 164,
+      "community": 79,
       "norm_label": "deny-listen"
     },
     {
@@ -3553,7 +3553,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_listen_identifier",
-      "community": 164,
+      "community": 79,
       "norm_label": "identifier"
     },
     {
@@ -3562,7 +3562,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_listen_description",
-      "community": 164,
+      "community": 79,
       "norm_label": "description"
     },
     {
@@ -3571,7 +3571,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_listen_commands",
-      "community": 164,
+      "community": 79,
       "norm_label": "commands"
     },
     {
@@ -3580,7 +3580,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_unlisten",
-      "community": 171,
+      "community": 79,
       "norm_label": "deny-unlisten"
     },
     {
@@ -3589,7 +3589,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_unlisten_identifier",
-      "community": 171,
+      "community": 79,
       "norm_label": "identifier"
     },
     {
@@ -3598,7 +3598,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_unlisten_description",
-      "community": 171,
+      "community": 79,
       "norm_label": "description"
     },
     {
@@ -3607,7 +3607,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_unlisten_commands",
-      "community": 171,
+      "community": 79,
       "norm_label": "commands"
     },
     {
@@ -3616,7 +3616,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_core_event_permission_sets",
-      "community": 183,
+      "community": 53,
       "norm_label": "permission_sets"
     },
     {
@@ -3625,7 +3625,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_core_event_global_scope_schema",
-      "community": 183,
+      "community": 53,
       "norm_label": "global_scope_schema"
     },
     {
@@ -3634,7 +3634,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_core_image",
-      "community": 53,
+      "community": 150,
       "norm_label": "core:image"
     },
     {
@@ -3697,7 +3697,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_from_path",
-      "community": 0,
+      "community": 128,
       "norm_label": "allow-from-path"
     },
     {
@@ -3706,7 +3706,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_from_path_identifier",
-      "community": 0,
+      "community": 128,
       "norm_label": "identifier"
     },
     {
@@ -3715,7 +3715,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_from_path_description",
-      "community": 0,
+      "community": 128,
       "norm_label": "description"
     },
     {
@@ -3724,7 +3724,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_from_path_commands",
-      "community": 0,
+      "community": 128,
       "norm_label": "commands"
     },
     {
@@ -3733,7 +3733,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_new",
-      "community": 0,
+      "community": 139,
       "norm_label": "allow-new"
     },
     {
@@ -3742,7 +3742,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_new_identifier",
-      "community": 0,
+      "community": 139,
       "norm_label": "identifier"
     },
     {
@@ -3751,7 +3751,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_new_description",
-      "community": 0,
+      "community": 139,
       "norm_label": "description"
     },
     {
@@ -3760,7 +3760,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_new_commands",
-      "community": 0,
+      "community": 139,
       "norm_label": "commands"
     },
     {
@@ -3769,7 +3769,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_rgba",
-      "community": 0,
+      "community": 151,
       "norm_label": "allow-rgba"
     },
     {
@@ -3778,7 +3778,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_rgba_identifier",
-      "community": 0,
+      "community": 151,
       "norm_label": "identifier"
     },
     {
@@ -3787,7 +3787,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_rgba_description",
-      "community": 0,
+      "community": 151,
       "norm_label": "description"
     },
     {
@@ -3796,7 +3796,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_rgba_commands",
-      "community": 0,
+      "community": 151,
       "norm_label": "commands"
     },
     {
@@ -3805,7 +3805,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_size",
-      "community": 0,
+      "community": 155,
       "norm_label": "allow-size"
     },
     {
@@ -3814,7 +3814,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_size_identifier",
-      "community": 0,
+      "community": 155,
       "norm_label": "identifier"
     },
     {
@@ -3823,7 +3823,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_size_description",
-      "community": 0,
+      "community": 155,
       "norm_label": "description"
     },
     {
@@ -3832,7 +3832,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_size_commands",
-      "community": 0,
+      "community": 155,
       "norm_label": "commands"
     },
     {
@@ -3841,7 +3841,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_from_bytes",
-      "community": 0,
+      "community": 166,
       "norm_label": "deny-from-bytes"
     },
     {
@@ -3850,7 +3850,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_from_bytes_identifier",
-      "community": 0,
+      "community": 166,
       "norm_label": "identifier"
     },
     {
@@ -3859,7 +3859,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_from_bytes_description",
-      "community": 0,
+      "community": 166,
       "norm_label": "description"
     },
     {
@@ -3868,7 +3868,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_from_bytes_commands",
-      "community": 0,
+      "community": 166,
       "norm_label": "commands"
     },
     {
@@ -3877,7 +3877,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_from_path",
-      "community": 0,
+      "community": 167,
       "norm_label": "deny-from-path"
     },
     {
@@ -3886,7 +3886,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_from_path_identifier",
-      "community": 0,
+      "community": 167,
       "norm_label": "identifier"
     },
     {
@@ -3895,7 +3895,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_from_path_description",
-      "community": 0,
+      "community": 167,
       "norm_label": "description"
     },
     {
@@ -3904,7 +3904,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_from_path_commands",
-      "community": 0,
+      "community": 167,
       "norm_label": "commands"
     },
     {
@@ -3949,7 +3949,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_rgba",
-      "community": 0,
+      "community": 171,
       "norm_label": "deny-rgba"
     },
     {
@@ -3958,7 +3958,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_rgba_identifier",
-      "community": 0,
+      "community": 171,
       "norm_label": "identifier"
     },
     {
@@ -3967,7 +3967,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_rgba_description",
-      "community": 0,
+      "community": 171,
       "norm_label": "description"
     },
     {
@@ -3976,7 +3976,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_rgba_commands",
-      "community": 0,
+      "community": 171,
       "norm_label": "commands"
     },
     {
@@ -3985,7 +3985,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_size",
-      "community": 0,
+      "community": 205,
       "norm_label": "deny-size"
     },
     {
@@ -3994,7 +3994,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_size_identifier",
-      "community": 0,
+      "community": 205,
       "norm_label": "identifier"
     },
     {
@@ -4003,7 +4003,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_size_description",
-      "community": 0,
+      "community": 205,
       "norm_label": "description"
     },
     {
@@ -4012,7 +4012,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_size_commands",
-      "community": 0,
+      "community": 205,
       "norm_label": "commands"
     },
     {
@@ -4021,7 +4021,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_core_image_permission_sets",
-      "community": 53,
+      "community": 150,
       "norm_label": "permission_sets"
     },
     {
@@ -4030,7 +4030,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_core_image_global_scope_schema",
-      "community": 53,
+      "community": 150,
       "norm_label": "global_scope_schema"
     },
     {
@@ -4066,7 +4066,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_append",
-      "community": 5,
+      "community": 79,
       "norm_label": "allow-append"
     },
     {
@@ -4075,7 +4075,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_append_identifier",
-      "community": 5,
+      "community": 79,
       "norm_label": "identifier"
     },
     {
@@ -4084,7 +4084,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_append_description",
-      "community": 5,
+      "community": 79,
       "norm_label": "description"
     },
     {
@@ -4093,7 +4093,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_append_commands",
-      "community": 5,
+      "community": 79,
       "norm_label": "commands"
     },
     {
@@ -4210,7 +4210,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_is_checked",
-      "community": 5,
+      "community": 136,
       "norm_label": "allow-is-checked"
     },
     {
@@ -4219,7 +4219,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_is_checked_identifier",
-      "community": 5,
+      "community": 136,
       "norm_label": "identifier"
     },
     {
@@ -4228,7 +4228,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_is_checked_description",
-      "community": 5,
+      "community": 136,
       "norm_label": "description"
     },
     {
@@ -4237,7 +4237,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_is_checked_commands",
-      "community": 5,
+      "community": 136,
       "norm_label": "commands"
     },
     {
@@ -4246,7 +4246,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_is_enabled",
-      "community": 5,
+      "community": 137,
       "norm_label": "allow-is-enabled"
     },
     {
@@ -4255,7 +4255,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_is_enabled_identifier",
-      "community": 5,
+      "community": 137,
       "norm_label": "identifier"
     },
     {
@@ -4264,7 +4264,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_is_enabled_description",
-      "community": 5,
+      "community": 137,
       "norm_label": "description"
     },
     {
@@ -4273,7 +4273,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_is_enabled_commands",
-      "community": 5,
+      "community": 137,
       "norm_label": "commands"
     },
     {
@@ -4354,7 +4354,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_prepend",
-      "community": 136,
+      "community": 5,
       "norm_label": "allow-prepend"
     },
     {
@@ -4363,7 +4363,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_prepend_identifier",
-      "community": 136,
+      "community": 5,
       "norm_label": "identifier"
     },
     {
@@ -4372,7 +4372,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_prepend_description",
-      "community": 136,
+      "community": 5,
       "norm_label": "description"
     },
     {
@@ -4381,7 +4381,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_prepend_commands",
-      "community": 136,
+      "community": 5,
       "norm_label": "commands"
     },
     {
@@ -4426,7 +4426,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_remove_at",
-      "community": 137,
+      "community": 5,
       "norm_label": "allow-remove-at"
     },
     {
@@ -4435,7 +4435,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_remove_at_identifier",
-      "community": 137,
+      "community": 5,
       "norm_label": "identifier"
     },
     {
@@ -4444,7 +4444,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_remove_at_description",
-      "community": 137,
+      "community": 5,
       "norm_label": "description"
     },
     {
@@ -4453,7 +4453,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_remove_at_commands",
-      "community": 137,
+      "community": 5,
       "norm_label": "commands"
     },
     {
@@ -4606,7 +4606,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_allow_set_as_windows_menu_for_nsapp",
-      "community": 143,
+      "community": 5,
       "norm_label": "allow-set-as-windows-menu-for-nsapp"
     },
     {
@@ -4615,7 +4615,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_set_as_windows_menu_for_nsapp_identifier",
-      "community": 143,
+      "community": 5,
       "norm_label": "identifier"
     },
     {
@@ -4624,7 +4624,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_set_as_windows_menu_for_nsapp_description",
-      "community": 143,
+      "community": 5,
       "norm_label": "description"
     },
     {
@@ -4633,7 +4633,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_allow_set_as_windows_menu_for_nsapp_commands",
-      "community": 143,
+      "community": 5,
       "norm_label": "commands"
     },
     {
@@ -4858,7 +4858,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_create_default",
-      "community": 5,
+      "community": 164,
       "norm_label": "deny-create-default"
     },
     {
@@ -4867,7 +4867,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_create_default_identifier",
-      "community": 5,
+      "community": 164,
       "norm_label": "identifier"
     },
     {
@@ -4876,7 +4876,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_create_default_description",
-      "community": 5,
+      "community": 164,
       "norm_label": "description"
     },
     {
@@ -4885,7 +4885,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_create_default_commands",
-      "community": 5,
+      "community": 164,
       "norm_label": "commands"
     },
     {
@@ -4930,7 +4930,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_permissions_deny_insert",
-      "community": 161,
+      "community": 5,
       "norm_label": "deny-insert"
     },
     {
@@ -4939,7 +4939,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_insert_identifier",
-      "community": 161,
+      "community": 5,
       "norm_label": "identifier"
     },
     {
@@ -4948,7 +4948,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_insert_description",
-      "community": 161,
+      "community": 5,
       "norm_label": "description"
     },
     {
@@ -4957,7 +4957,7 @@
       "source_file": "src-tauri/gen/schemas/acl-manifests.json",
       "source_location": "L1",
       "id": "schemas_acl_manifests_deny_insert_commands",
-      "community": 161,
+      "community": 5,
       "norm_label": "commands"
     },
     {
@@ -6368,7 +6368,7 @@
       "label": "set_llm_model()",
       "file_type": "code",
       "source_file": "src-tauri/src/commands/mod.rs",
-      "source_location": "L39",
+      "source_location": "L45",
       "id": "commands_mod_set_llm_model",
       "community": 10,
       "norm_label": "set_llm_model()"
@@ -6377,7 +6377,7 @@
       "label": "pull_ollama_model()",
       "file_type": "code",
       "source_file": "src-tauri/src/commands/mod.rs",
-      "source_location": "L46",
+      "source_location": "L52",
       "id": "commands_mod_pull_ollama_model",
       "community": 10,
       "norm_label": "pull_ollama_model()"
@@ -6386,7 +6386,7 @@
       "label": "get_ollama_status()",
       "file_type": "code",
       "source_file": "src-tauri/src/commands/mod.rs",
-      "source_location": "L56",
+      "source_location": "L62",
       "id": "commands_mod_get_ollama_status",
       "community": 10,
       "norm_label": "get_ollama_status()"
@@ -6395,7 +6395,7 @@
       "label": "OllamaStatus",
       "file_type": "code",
       "source_file": "src-tauri/src/commands/mod.rs",
-      "source_location": "L56",
+      "source_location": "L62",
       "id": "src_tauri_src_commands_mod_rs_ollamastatus",
       "community": 10,
       "norm_label": "ollamastatus"
@@ -6404,7 +6404,7 @@
       "label": "refresh_ollama_status()",
       "file_type": "code",
       "source_file": "src-tauri/src/commands/mod.rs",
-      "source_location": "L65",
+      "source_location": "L71",
       "id": "commands_mod_refresh_ollama_status",
       "community": 10,
       "norm_label": "refresh_ollama_status()"
@@ -6422,7 +6422,7 @@
       "label": "run()",
       "file_type": "code",
       "source_file": "src-tauri/src/lib.rs",
-      "source_location": "L13",
+      "source_location": "L16",
       "id": "src_lib_run",
       "community": 10,
       "norm_label": "run()"
@@ -6770,6 +6770,213 @@
       "norm_label": "audio_service.rs"
     },
     {
+      "label": "AudioService",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L16",
+      "id": "services_audio_service_audioservice",
+      "community": 34,
+      "norm_label": "audioservice"
+    },
+    {
+      "label": "Arc",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L17",
+      "id": "src_tauri_src_services_audio_service_rs_arc",
+      "community": 34,
+      "norm_label": "arc"
+    },
+    {
+      "label": "IpcClient",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L17",
+      "id": "src_tauri_src_services_audio_service_rs_ipcclient",
+      "community": 34,
+      "norm_label": "ipcclient"
+    },
+    {
+      "label": "RecordingSession",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L23",
+      "id": "services_audio_service_recordingsession",
+      "community": 34,
+      "norm_label": "recordingsession"
+    },
+    {
+      "label": "AtomicBool",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L24",
+      "id": "atomicbool",
+      "community": 34,
+      "norm_label": "atomicbool"
+    },
+    {
+      "label": "Option",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L25",
+      "id": "src_tauri_src_services_audio_service_rs_option",
+      "community": 34,
+      "norm_label": "option"
+    },
+    {
+      "label": "JoinHandle",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L25",
+      "id": "joinhandle",
+      "community": 34,
+      "norm_label": "joinhandle"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L25",
+      "id": "src_tauri_src_services_audio_service_rs_result",
+      "community": 34,
+      "norm_label": "result"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L25",
+      "id": "src_tauri_src_services_audio_service_rs_string",
+      "community": 34,
+      "norm_label": "string"
+    },
+    {
+      "label": ".new()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L29",
+      "id": "services_audio_service_audioservice_new",
+      "community": 34,
+      "norm_label": ".new()"
+    },
+    {
+      "label": "Self",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L29",
+      "id": "src_tauri_src_services_audio_service_rs_self",
+      "community": 34,
+      "norm_label": "self"
+    },
+    {
+      "label": ".start_recording()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L35",
+      "id": "services_audio_service_audioservice_start_recording",
+      "community": 34,
+      "norm_label": ".start_recording()"
+    },
+    {
+      "label": ".check_device()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L104",
+      "id": "services_audio_service_audioservice_check_device",
+      "community": 34,
+      "norm_label": ".check_device()"
+    },
+    {
+      "label": ".stop()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L118",
+      "id": "services_audio_service_recordingsession_stop",
+      "community": 34,
+      "norm_label": ".stop()"
+    },
+    {
+      "label": "open_stream()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "id": "services_audio_service_open_stream",
+      "community": 34,
+      "norm_label": "open_stream()"
+    },
+    {
+      "label": "Device",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "id": "device",
+      "community": 34,
+      "norm_label": "device"
+    },
+    {
+      "label": "StreamConfig",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "id": "streamconfig",
+      "community": 34,
+      "norm_label": "streamconfig"
+    },
+    {
+      "label": "SampleFormat",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "id": "sampleformat",
+      "community": 34,
+      "norm_label": "sampleformat"
+    },
+    {
+      "label": "SyncSender",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "id": "syncsender",
+      "community": 34,
+      "norm_label": "syncsender"
+    },
+    {
+      "label": "Vec",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "id": "src_tauri_src_services_audio_service_rs_vec",
+      "community": 34,
+      "norm_label": "vec"
+    },
+    {
+      "label": "Stream",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "id": "stream",
+      "community": 34,
+      "norm_label": "stream"
+    },
+    {
+      "label": "build()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L145",
+      "id": "services_audio_service_build",
+      "community": 34,
+      "norm_label": "build()"
+    },
+    {
+      "label": "encode_s16le()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L175",
+      "id": "services_audio_service_encode_s16le",
+      "community": 34,
+      "norm_label": "encode_s16le()"
+    },
+    {
       "label": "config_service.rs",
       "file_type": "code",
       "source_file": "src-tauri/src/services/config_service.rs",
@@ -6975,6 +7182,195 @@
       "id": "services_hotkey_service",
       "community": 36,
       "norm_label": "hotkey_service.rs"
+    },
+    {
+      "label": "HotkeyService",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L13",
+      "id": "services_hotkey_service_hotkeyservice",
+      "community": 36,
+      "norm_label": "hotkeyservice"
+    },
+    {
+      "label": ".start()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L22",
+      "id": "services_hotkey_service_hotkeyservice_start",
+      "community": 36,
+      "norm_label": ".start()"
+    },
+    {
+      "label": "AppHandle",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L22",
+      "id": "apphandle",
+      "community": 36,
+      "norm_label": "apphandle"
+    },
+    {
+      "label": "Arc",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L22",
+      "id": "src_tauri_src_services_hotkey_service_rs_arc",
+      "community": 36,
+      "norm_label": "arc"
+    },
+    {
+      "label": "IpcClient",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L22",
+      "id": "src_tauri_src_services_hotkey_service_rs_ipcclient",
+      "community": 36,
+      "norm_label": "ipcclient"
+    },
+    {
+      "label": "AppConfig",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L22",
+      "id": "src_tauri_src_services_hotkey_service_rs_appconfig",
+      "community": 36,
+      "norm_label": "appconfig"
+    },
+    {
+      "label": "HotkeyState",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L69",
+      "id": "services_hotkey_service_hotkeystate",
+      "community": 36,
+      "norm_label": "hotkeystate"
+    },
+    {
+      "label": "Vec",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L70",
+      "id": "src_tauri_src_services_hotkey_service_rs_vec",
+      "community": 36,
+      "norm_label": "vec"
+    },
+    {
+      "label": "Key",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L70",
+      "id": "key",
+      "community": 36,
+      "norm_label": "key"
+    },
+    {
+      "label": "Mutex",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L72",
+      "id": "src_tauri_src_services_hotkey_service_rs_mutex",
+      "community": 36,
+      "norm_label": "mutex"
+    },
+    {
+      "label": "Option",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L72",
+      "id": "src_tauri_src_services_hotkey_service_rs_option",
+      "community": 36,
+      "norm_label": "option"
+    },
+    {
+      "label": "RecordingSession",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L72",
+      "id": "recordingsession",
+      "community": 36,
+      "norm_label": "recordingsession"
+    },
+    {
+      "label": "AudioService",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L74",
+      "id": "audioservice",
+      "community": 36,
+      "norm_label": "audioservice"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L77",
+      "id": "src_tauri_src_services_hotkey_service_rs_string",
+      "community": 36,
+      "norm_label": "string"
+    },
+    {
+      "label": "handle_event()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L82",
+      "id": "services_hotkey_service_handle_event",
+      "community": 36,
+      "norm_label": "handle_event()"
+    },
+    {
+      "label": "Event",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L82",
+      "id": "event",
+      "community": 14,
+      "norm_label": "event"
+    },
+    {
+      "label": "finish_session()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L139",
+      "id": "services_hotkey_service_finish_session",
+      "community": 36,
+      "norm_label": "finish_session()"
+    },
+    {
+      "label": "type_text()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L180",
+      "id": "services_hotkey_service_type_text",
+      "community": 36,
+      "norm_label": "type_text()"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L180",
+      "id": "src_tauri_src_services_hotkey_service_rs_result",
+      "community": 36,
+      "norm_label": "result"
+    },
+    {
+      "label": "parse_modifiers()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L199",
+      "id": "services_hotkey_service_parse_modifiers",
+      "community": 36,
+      "norm_label": "parse_modifiers()"
+    },
+    {
+      "label": "parse_key()",
+      "file_type": "code",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L212",
+      "id": "services_hotkey_service_parse_key",
+      "community": 36,
+      "norm_label": "parse_key()"
     },
     {
       "label": "ipc_client.rs",
@@ -7571,11 +7967,20 @@
       "norm_label": "voicepilotstate"
     },
     {
+      "label": "Arc",
+      "file_type": "code",
+      "source_file": "src-tauri/src/state/app_state.rs",
+      "source_location": "L15",
+      "id": "src_tauri_src_state_app_state_rs_arc",
+      "community": 10,
+      "norm_label": "arc"
+    },
+    {
       "label": "IpcClient",
       "file_type": "code",
       "source_file": "src-tauri/src/state/app_state.rs",
       "source_location": "L15",
-      "id": "ipcclient",
+      "id": "src_tauri_src_state_app_state_rs_ipcclient",
       "community": 10,
       "norm_label": "ipcclient"
     },
@@ -7808,7 +8213,7 @@
       "label": "OllamaModel",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "src_app_ollamamodel",
       "community": 14,
       "norm_label": "ollamamodel"
@@ -7817,7 +8222,7 @@
       "label": "OllamaStatus",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L24",
+      "source_location": "L25",
       "id": "src_app_ollamastatus",
       "community": 14,
       "norm_label": "ollamastatus"
@@ -7826,7 +8231,7 @@
       "label": "RuntimeMode",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L34",
+      "source_location": "L35",
       "id": "src_app_runtimemode",
       "community": 14,
       "norm_label": "runtimemode"
@@ -7835,7 +8240,7 @@
       "label": "formatHotkey()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L39",
+      "source_location": "L40",
       "id": "src_app_formathotkey",
       "community": 14,
       "norm_label": "formathotkey()"
@@ -7844,7 +8249,7 @@
       "label": "formatBytes()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L42",
+      "source_location": "L43",
       "id": "src_app_formatbytes",
       "community": 14,
       "norm_label": "formatbytes()"
@@ -7853,7 +8258,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L54",
+      "source_location": "L55",
       "id": "src_app_app",
       "community": 14,
       "norm_label": "app()"
@@ -14391,6 +14796,15 @@
       "id": "docs_development_development_plan",
       "community": 190,
       "norm_label": "development plan"
+    },
+    {
+      "label": "IpcClient",
+      "file_type": "code",
+      "source_file": "src-tauri/src/state/app_state.rs",
+      "source_location": "L15",
+      "community": 10,
+      "norm_label": "ipcclient",
+      "id": "ipcclient"
     },
     {
       "label": "OllamaModel",
@@ -23517,9 +23931,9 @@
       "source_file": "src-tauri/src/models/config.rs",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_config",
-      "target": "models_config_appconfig",
-      "confidence_score": 1.0
+      "target": "models_config_appconfig"
     },
     {
       "relation": "contains",
@@ -23527,9 +23941,9 @@
       "source_file": "src-tauri/src/models/config.rs",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_config",
-      "target": "models_config_audioconfig",
-      "confidence_score": 1.0
+      "target": "models_config_audioconfig"
     },
     {
       "relation": "contains",
@@ -23537,9 +23951,9 @@
       "source_file": "src-tauri/src/models/config.rs",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_config",
-      "target": "models_config_hotkeyconfig",
-      "confidence_score": 1.0
+      "target": "models_config_hotkeyconfig"
     },
     {
       "relation": "contains",
@@ -23547,9 +23961,9 @@
       "source_file": "src-tauri/src/models/config.rs",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_config",
-      "target": "models_config_modelconfig",
-      "confidence_score": 1.0
+      "target": "models_config_modelconfig"
     },
     {
       "relation": "contains",
@@ -23557,9 +23971,9 @@
       "source_file": "src-tauri/src/models/config.rs",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_config",
-      "target": "models_config_typingconfig",
-      "confidence_score": 1.0
+      "target": "models_config_typingconfig"
     },
     {
       "relation": "references",
@@ -23568,9 +23982,9 @@
       "source_location": "L6",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_config_appconfig",
-      "target": "audioconfig",
-      "confidence_score": 1.0
+      "target": "audioconfig"
     },
     {
       "relation": "implements",
@@ -23578,9 +23992,9 @@
       "source_file": "src-tauri/src/models/config.rs",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_config_appconfig",
-      "target": "default",
-      "confidence_score": 1.0
+      "target": "default"
     },
     {
       "relation": "references",
@@ -23589,9 +24003,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_config_appconfig",
-      "target": "hotkeyconfig",
-      "confidence_score": 1.0
+      "target": "hotkeyconfig"
     },
     {
       "relation": "references",
@@ -23600,9 +24014,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_config_appconfig",
-      "target": "modelconfig",
-      "confidence_score": 1.0
+      "target": "modelconfig"
     },
     {
       "relation": "method",
@@ -23610,9 +24024,9 @@
       "source_file": "src-tauri/src/models/config.rs",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_config_appconfig",
-      "target": "models_config_appconfig_default",
-      "confidence_score": 1.0
+      "target": "models_config_appconfig_default"
     },
     {
       "relation": "references",
@@ -23621,9 +24035,9 @@
       "source_location": "L8",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_config_appconfig",
-      "target": "typingconfig",
-      "confidence_score": 1.0
+      "target": "typingconfig"
     },
     {
       "relation": "references",
@@ -23632,9 +24046,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_config_hotkeyconfig",
-      "target": "src_tauri_src_models_config_rs_string",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_config_rs_string"
     },
     {
       "relation": "references",
@@ -23643,9 +24057,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_config_hotkeyconfig",
-      "target": "src_tauri_src_models_config_rs_vec",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_config_rs_vec"
     },
     {
       "relation": "references",
@@ -23654,9 +24068,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "models_config_audioconfig",
-      "target": "src_tauri_src_models_config_rs_string",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_config_rs_string"
     },
     {
       "relation": "references",
@@ -23665,9 +24079,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_config_modelconfig",
-      "target": "src_tauri_src_models_config_rs_string",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_config_rs_string"
     },
     {
       "relation": "references",
@@ -23676,9 +24090,9 @@
       "source_location": "L21",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_config_typingconfig",
-      "target": "src_tauri_src_models_config_rs_string",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_config_rs_string"
     },
     {
       "relation": "references",
@@ -23687,9 +24101,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_config_audioconfig",
-      "target": "src_tauri_src_models_config_rs_option",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_config_rs_option"
     },
     {
       "relation": "references",
@@ -23698,9 +24112,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "context": "return_type",
+      "confidence_score": 1.0,
       "source": "models_config_appconfig_default",
-      "target": "src_tauri_src_models_config_rs_self",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_config_rs_self"
     },
     {
       "relation": "contains",
@@ -23708,9 +24122,9 @@
       "source_file": "src-tauri/src/models/error.rs",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_error",
-      "target": "models_error_voicepiloterror",
-      "confidence_score": 1.0
+      "target": "models_error_voicepiloterror"
     },
     {
       "relation": "contains",
@@ -23718,9 +24132,9 @@
       "source_file": "src-tauri/src/models/ipc.rs",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_ipc",
-      "target": "models_ipc_ipcrequest",
-      "confidence_score": 1.0
+      "target": "models_ipc_ipcrequest"
     },
     {
       "relation": "contains",
@@ -23728,9 +24142,9 @@
       "source_file": "src-tauri/src/models/ipc.rs",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_ipc",
-      "target": "models_ipc_ipcresponse",
-      "confidence_score": 1.0
+      "target": "models_ipc_ipcresponse"
     },
     {
       "relation": "method",
@@ -23738,9 +24152,9 @@
       "source_file": "src-tauri/src/models/ipc.rs",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_ipc_ipcrequest",
-      "target": "models_ipc_ipcrequest_request_id",
-      "confidence_score": 1.0
+      "target": "models_ipc_ipcrequest_request_id"
     },
     {
       "relation": "method",
@@ -23748,9 +24162,9 @@
       "source_file": "src-tauri/src/models/ipc.rs",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_ipc_ipcresponse",
-      "target": "models_ipc_ipcresponse_request_id",
-      "confidence_score": 1.0
+      "target": "models_ipc_ipcresponse_request_id"
     },
     {
       "relation": "contains",
@@ -23758,9 +24172,9 @@
       "source_file": "src-tauri/src/models/ollama.rs",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_ollama",
-      "target": "models_ollama_ollamamodel",
-      "confidence_score": 1.0
+      "target": "models_ollama_ollamamodel"
     },
     {
       "relation": "contains",
@@ -23768,9 +24182,9 @@
       "source_file": "src-tauri/src/models/ollama.rs",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_ollama",
-      "target": "models_ollama_ollamastatus",
-      "confidence_score": 1.0
+      "target": "models_ollama_ollamastatus"
     },
     {
       "relation": "references",
@@ -23779,9 +24193,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "models_ollama_ollamastatus",
-      "target": "src_tauri_src_models_ollama_rs_ollamamodel",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_ollama_rs_ollamamodel"
     },
     {
       "relation": "references",
@@ -23790,9 +24204,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_ollama_ollamastatus",
-      "target": "src_tauri_src_models_ollama_rs_option",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_ollama_rs_option"
     },
     {
       "relation": "references",
@@ -23801,9 +24215,9 @@
       "source_location": "L11",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "models_ollama_ollamastatus",
-      "target": "src_tauri_src_models_ollama_rs_string",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_ollama_rs_string"
     },
     {
       "relation": "references",
@@ -23812,9 +24226,9 @@
       "source_location": "L9",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_ollama_ollamastatus",
-      "target": "src_tauri_src_models_ollama_rs_vec",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_ollama_rs_vec"
     },
     {
       "relation": "references",
@@ -23823,9 +24237,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_ollama_ollamamodel",
-      "target": "src_tauri_src_models_ollama_rs_option",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_ollama_rs_option"
     },
     {
       "relation": "references",
@@ -23834,9 +24248,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "models_ollama_ollamamodel",
-      "target": "src_tauri_src_models_ollama_rs_string",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_ollama_rs_string"
     },
     {
       "relation": "contains",
@@ -23844,9 +24258,9 @@
       "source_file": "src-tauri/src/models/transcript.rs",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "models_transcript",
-      "target": "models_transcript_transcriptevent",
-      "confidence_score": 1.0
+      "target": "models_transcript_transcriptevent"
     },
     {
       "relation": "references",
@@ -23855,9 +24269,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_transcript_transcriptevent",
-      "target": "src_tauri_src_models_transcript_rs_option",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_models_transcript_rs_option"
     },
     {
       "relation": "references",
@@ -23866,8 +24280,538 @@
       "source_location": "L5",
       "weight": 1.0,
       "context": "field",
+      "confidence_score": 1.0,
       "source": "models_transcript_transcriptevent",
-      "target": "src_tauri_src_models_transcript_rs_string",
+      "target": "src_tauri_src_models_transcript_rs_string"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "services_audio_service",
+      "target": "services_audio_service_audioservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "services_audio_service",
+      "target": "services_audio_service_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "services_audio_service",
+      "target": "services_audio_service_encode_s16le",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "services_audio_service",
+      "target": "services_audio_service_open_stream",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "services_audio_service",
+      "target": "services_audio_service_recordingsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "context": "import",
+      "source": "services_audio_service",
+      "target": "src_tauri_src_services_audio_service_rs_ipcclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "services_audio_service_audioservice",
+      "target": "services_audio_service_audioservice_check_device",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "services_audio_service_audioservice",
+      "target": "services_audio_service_audioservice_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "services_audio_service_audioservice",
+      "target": "services_audio_service_audioservice_start_recording",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "field",
+      "source": "services_audio_service_audioservice",
+      "target": "src_tauri_src_services_audio_service_rs_arc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_audioservice",
+      "target": "src_tauri_src_services_audio_service_rs_ipcclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_audio_service_audioservice_new",
+      "target": "src_tauri_src_services_audio_service_rs_arc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "field",
+      "source": "services_audio_service_recordingsession",
+      "target": "src_tauri_src_services_audio_service_rs_arc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_audioservice_new",
+      "target": "src_tauri_src_services_audio_service_rs_ipcclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_audioservice_start_recording",
+      "target": "services_audio_service_recordingsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_recordingsession",
+      "target": "atomicbool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_recordingsession",
+      "target": "joinhandle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "services_audio_service_recordingsession",
+      "target": "services_audio_service_recordingsession_stop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "field",
+      "source": "services_audio_service_recordingsession",
+      "target": "src_tauri_src_services_audio_service_rs_option",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_recordingsession",
+      "target": "src_tauri_src_services_audio_service_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_recordingsession",
+      "target": "src_tauri_src_services_audio_service_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L104",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "services_audio_service_audioservice_check_device",
+      "target": "src_tauri_src_services_audio_service_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "services_audio_service_audioservice_start_recording",
+      "target": "src_tauri_src_services_audio_service_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L145",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "services_audio_service_build",
+      "target": "src_tauri_src_services_audio_service_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "services_audio_service_open_stream",
+      "target": "src_tauri_src_services_audio_service_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L118",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "services_audio_service_recordingsession_stop",
+      "target": "src_tauri_src_services_audio_service_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L104",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_audioservice_check_device",
+      "target": "src_tauri_src_services_audio_service_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_audioservice_start_recording",
+      "target": "src_tauri_src_services_audio_service_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L145",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_build",
+      "target": "src_tauri_src_services_audio_service_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_open_stream",
+      "target": "src_tauri_src_services_audio_service_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L118",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_recordingsession_stop",
+      "target": "src_tauri_src_services_audio_service_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "services_audio_service_audioservice_new",
+      "target": "src_tauri_src_services_audio_service_rs_self",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "services_audio_service_audioservice_start_recording",
+      "target": "services_audio_service_audioservice_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "services_audio_service_recordingsession_stop",
+      "target": "services_audio_service_audioservice_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "services_audio_service_audioservice_start_recording",
+      "target": "services_audio_service_audioservice_check_device",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "services_audio_service_audioservice_start_recording",
+      "target": "services_audio_service_encode_s16le",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "services_audio_service_audioservice_start_recording",
+      "target": "services_audio_service_open_stream",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_audio_service_open_stream",
+      "target": "device",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_audio_service_open_stream",
+      "target": "sampleformat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_open_stream",
+      "target": "src_tauri_src_services_audio_service_rs_vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_open_stream",
+      "target": "stream",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_audio_service_open_stream",
+      "target": "streamconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_audio_service_open_stream",
+      "target": "syncsender",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L145",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_audio_service_build",
+      "target": "device",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L145",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_audio_service_build",
+      "target": "streamconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L145",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_audio_service_build",
+      "target": "syncsender",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L145",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_build",
+      "target": "src_tauri_src_services_audio_service_rs_vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L175",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "services_audio_service_encode_s16le",
+      "target": "src_tauri_src_services_audio_service_rs_vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/audio_service.rs",
+      "source_location": "L145",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_audio_service_build",
+      "target": "stream",
       "confidence_score": 1.0
     },
     {
@@ -24473,6 +25417,460 @@
       "confidence_score": 1.0,
       "source": "services_config_service_split_modifiers",
       "target": "src_tauri_src_services_config_service_rs_vec"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "services_hotkey_service",
+      "target": "services_hotkey_service_finish_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "services_hotkey_service",
+      "target": "services_hotkey_service_handle_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "services_hotkey_service",
+      "target": "services_hotkey_service_hotkeyservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "services_hotkey_service",
+      "target": "services_hotkey_service_hotkeystate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "services_hotkey_service",
+      "target": "services_hotkey_service_parse_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "services_hotkey_service",
+      "target": "services_hotkey_service_parse_modifiers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "services_hotkey_service",
+      "target": "services_hotkey_service_type_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L1",
+      "weight": 1.0,
+      "context": "import",
+      "source": "services_hotkey_service",
+      "target": "src_tauri_src_services_hotkey_service_rs_appconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "context": "import",
+      "source": "services_hotkey_service",
+      "target": "src_tauri_src_services_hotkey_service_rs_ipcclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "services_hotkey_service_hotkeyservice",
+      "target": "services_hotkey_service_hotkeyservice_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_hotkey_service_hotkeyservice_start",
+      "target": "apphandle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "services_hotkey_service_hotkeyservice_start",
+      "target": "services_hotkey_service_handle_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "services_hotkey_service_hotkeyservice_start",
+      "target": "services_hotkey_service_parse_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "services_hotkey_service_hotkeyservice_start",
+      "target": "services_hotkey_service_parse_modifiers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_hotkey_service_hotkeyservice_start",
+      "target": "src_tauri_src_services_hotkey_service_rs_appconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_hotkey_service_hotkeyservice_start",
+      "target": "src_tauri_src_services_hotkey_service_rs_arc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_hotkey_service_hotkeyservice_start",
+      "target": "src_tauri_src_services_hotkey_service_rs_ipcclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L76",
+      "weight": 1.0,
+      "context": "field",
+      "source": "services_hotkey_service_hotkeystate",
+      "target": "apphandle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L139",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_hotkey_service_finish_session",
+      "target": "src_tauri_src_services_hotkey_service_rs_arc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_hotkey_service_handle_event",
+      "target": "src_tauri_src_services_hotkey_service_rs_arc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L75",
+      "weight": 1.0,
+      "context": "field",
+      "source": "services_hotkey_service_hotkeystate",
+      "target": "src_tauri_src_services_hotkey_service_rs_arc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L75",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_hotkey_service_hotkeystate",
+      "target": "src_tauri_src_services_hotkey_service_rs_ipcclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L139",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_hotkey_service_finish_session",
+      "target": "services_hotkey_service_hotkeystate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_hotkey_service_handle_event",
+      "target": "services_hotkey_service_hotkeystate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L74",
+      "weight": 1.0,
+      "context": "field",
+      "source": "services_hotkey_service_hotkeystate",
+      "target": "audioservice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L73",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_hotkey_service_hotkeystate",
+      "target": "key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L72",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_hotkey_service_hotkeystate",
+      "target": "recordingsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L73",
+      "weight": 1.0,
+      "context": "field",
+      "source": "services_hotkey_service_hotkeystate",
+      "target": "src_tauri_src_services_hotkey_service_rs_mutex",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L72",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_hotkey_service_hotkeystate",
+      "target": "src_tauri_src_services_hotkey_service_rs_option",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L79",
+      "weight": 1.0,
+      "context": "field",
+      "source": "services_hotkey_service_hotkeystate",
+      "target": "src_tauri_src_services_hotkey_service_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L73",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_hotkey_service_hotkeystate",
+      "target": "src_tauri_src_services_hotkey_service_rs_vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L199",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "services_hotkey_service_parse_modifiers",
+      "target": "src_tauri_src_services_hotkey_service_rs_vec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L212",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "services_hotkey_service_parse_key",
+      "target": "key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L199",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_hotkey_service_parse_modifiers",
+      "target": "key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L139",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_hotkey_service_finish_session",
+      "target": "recordingsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L199",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_hotkey_service_parse_modifiers",
+      "target": "src_tauri_src_services_hotkey_service_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L180",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "services_hotkey_service_type_text",
+      "target": "src_tauri_src_services_hotkey_service_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L82",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "services_hotkey_service_handle_event",
+      "target": "event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "services_hotkey_service_handle_event",
+      "target": "services_hotkey_service_finish_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "services_hotkey_service_finish_session",
+      "target": "services_hotkey_service_type_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/services/hotkey_service.rs",
+      "source_location": "L180",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "services_hotkey_service_type_text",
+      "target": "src_tauri_src_services_hotkey_service_rs_result",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -25845,9 +27243,9 @@
       "source_location": "L96",
       "weight": 1.0,
       "context": "generic_arg",
+      "confidence_score": 1.0,
       "source": "services_ollama_service_ollamaservice_fetch_models",
-      "target": "src_tauri_src_services_ollama_service_rs_ollamamodel",
-      "confidence_score": 1.0
+      "target": "src_tauri_src_services_ollama_service_rs_ollamamodel"
     },
     {
       "relation": "references",
@@ -25908,6 +27306,17 @@
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "src-tauri/src/state/app_state.rs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "context": "import",
+      "source": "state_app_state",
+      "target": "src_tauri_src_state_app_state_rs_ipcclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/state/app_state.rs",
       "source_location": "L3",
       "weight": 1.0,
       "context": "import",
@@ -25956,6 +27365,28 @@
       "confidence_score": 1.0,
       "source": "state_app_state_voicepilotstate",
       "target": "ipcclient"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/state/app_state.rs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "field",
+      "source": "state_app_state_voicepilotstate",
+      "target": "src_tauri_src_state_app_state_rs_arc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src-tauri/src/state/app_state.rs",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "state_app_state_voicepilotstate",
+      "target": "src_tauri_src_state_app_state_rs_ipcclient",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -33224,5 +34655,5 @@
       "source_file": "mvp-voicePilot/src/types/config.ts"
     }
   ],
-  "built_at_commit": "3b46d5932464bd83acacabfa279e40712657066d"
+  "built_at_commit": "7175fa2c1fe63b75c55748c42d3816a4bc0b2d03"
 }

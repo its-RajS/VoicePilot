@@ -1,16 +1,16 @@
 # Graph Report - mvp-voicePilot  (2026-07-09)
 
 ## Corpus Check
-- 132 files · ~68,764 words
+- 132 files · ~70,509 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1599 nodes · 1823 edges · 205 communities (191 shown, 14 thin omitted)
+- 1645 nodes · 1917 edges · 206 communities (192 shown, 14 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.66)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3b46d593`
+- Built from commit: `7175fa2c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,7 +42,9 @@
 - [[_COMMUNITY_Community 25|Community 25]]
 - [[_COMMUNITY_Community 30|Community 30]]
 - [[_COMMUNITY_Community 31|Community 31]]
+- [[_COMMUNITY_Community 34|Community 34]]
 - [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 36|Community 36]]
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 46|Community 46]]
 - [[_COMMUNITY_Community 47|Community 47]]
@@ -191,6 +193,7 @@
 - [[_COMMUNITY_Community 190|Community 190]]
 - [[_COMMUNITY_Community 192|Community 192]]
 - [[_COMMUNITY_Community 202|Community 202]]
+- [[_COMMUNITY_Community 205|Community 205]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `allow` - 76 edges
@@ -199,10 +202,10 @@
 4. `permissions` - 30 edges
 5. `skills` - 21 edges
 6. `compilerOptions` - 16 edges
-7. `Frontend Patterns Skill` - 13 edges
-8. `IpcClient` - 12 edges
-9. `compilerOptions` - 11 edges
-10. `OllamaClient` - 11 edges
+7. `HotkeyState` - 13 edges
+8. `Frontend Patterns Skill` - 13 edges
+9. `IpcClient` - 12 edges
+10. `compilerOptions` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `No Default Logging Of Audio Or Prompts` --implements--> `Offline And Privacy-First Operation`  [INFERRED]
@@ -219,7 +222,9 @@
 ## Import Cycles
 - 1-file cycle: `src-tauri/src/commands/mod.rs -> src-tauri/src/commands/mod.rs`
 - 1-file cycle: `src-tauri/src/state/app_state.rs -> src-tauri/src/state/app_state.rs`
+- 1-file cycle: `src-tauri/src/services/audio_service.rs -> src-tauri/src/services/audio_service.rs`
 - 1-file cycle: `src-tauri/src/services/config_service.rs -> src-tauri/src/services/config_service.rs`
+- 1-file cycle: `src-tauri/src/services/hotkey_service.rs -> src-tauri/src/services/hotkey_service.rs`
 - 1-file cycle: `src-tauri/src/services/ipc_client.rs -> src-tauri/src/services/ipc_client.rs`
 - 1-file cycle: `src-tauri/src/services/ollama_service.rs -> src-tauri/src/services/ollama_service.rs`
 - 1-file cycle: `src-tauri/src/utils/paths.rs -> src-tauri/src/utils/paths.rs`
@@ -235,11 +240,11 @@
 - **Voice Interaction Feedback Loop** — hotkey_service_serviceboundary, app_state_sessionstate, transcriptstore_usetranscriptstore, liveoverlay_liveoverlay [INFERRED 0.72]
 - **Configuration Surface** — config_service_serviceboundary, config_voicepilotconfig, paths_config_dir [INFERRED 0.80]
 
-## Communities (205 total, 14 thin omitted)
+## Communities (206 total, 14 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.05
-Nodes (46): commands, description, identifier, commands, description, identifier, commands, description (+38 more)
+Cohesion: 0.22
+Nodes (9): commands, description, identifier, permissions, commands, description, identifier, allow-from-bytes (+1 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.06
@@ -270,16 +275,16 @@ Cohesion: 0.14
 Nodes (13): app, security, windows, build, beforeBuildCommand, beforeDevCommand, devUrl, frontendDist (+5 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.06
-Nodes (33): commands, description, identifier, commands, description, identifier, commands, description (+25 more)
+Cohesion: 0.07
+Nodes (29): commands, description, identifier, commands, description, identifier, commands, description (+21 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.08
 Nodes (21): Any, bool, bytes, PipelineOrchestrator, PipelineResult, EngineNotImplemented, OllamaClient, OllamaUnavailable (+13 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.20
-Nodes (18): cleanup_transcript(), get_config(), get_ollama_status(), health(), pull_ollama_model(), refresh_ollama_status(), set_llm_model(), IpcClient (+10 more)
+Cohesion: 0.18
+Nodes (20): cleanup_transcript(), get_config(), get_ollama_status(), health(), pull_ollama_model(), refresh_ollama_status(), set_llm_model(), IpcClient (+12 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.17
@@ -295,7 +300,7 @@ Nodes (21): Accessibility Checklist, Admin Verification, Analytics Patterns, Aut
 
 ### Community 14 - "Community 14"
 Cohesion: 0.09
-Nodes (24): Client, Into, OllamaModel, OllamaTagModel, LiveOverlay(), OllamaService, OllamaTagModel, OllamaTagsResponse (+16 more)
+Nodes (25): Client, Event, Into, OllamaModel, OllamaTagModel, LiveOverlay(), OllamaService, OllamaTagModel (+17 more)
 
 ### Community 15 - "Community 15"
 Cohesion: 0.09
@@ -329,9 +334,17 @@ Nodes (17): API Routes, Authoritative References, Canonical Code References, Com
 Cohesion: 0.12
 Nodes (16): Agent Assignment Matrix (MANDATORY), Agent Coordination Skill, Authoritative References, Blocker Escalation Protocol, CORRECT Patterns, Escalation Template, Evidence Attachment, FORBIDDEN Patterns (+8 more)
 
+### Community 34 - "Community 34"
+Cohesion: 0.18
+Nodes (19): AtomicBool, Device, JoinHandle, SampleFormat, AudioService, build(), encode_s16le(), open_stream() (+11 more)
+
 ### Community 35 - "Community 35"
 Cohesion: 0.12
 Nodes (16): Authoritative References, Branch Sync (Post-Release), CI/CD Validation Command, CORRECT Patterns, FORBIDDEN Patterns, GitHub Release, Merge Strategy, PR Creation Template (+8 more)
+
+### Community 36 - "Community 36"
+Cohesion: 0.19
+Nodes (19): AppHandle, AudioService, Key, RecordingSession, finish_session(), handle_event(), HotkeyService, HotkeyState (+11 more)
 
 ### Community 37 - "Community 37"
 Cohesion: 0.12
@@ -366,16 +379,16 @@ Cohesion: 0.15
 Nodes (12): compilerOptions, allowSyntheticDefaultImports, esModuleInterop, lib, module, moduleResolution, noEmit, skipLibCheck (+4 more)
 
 ### Community 53 - "Community 53"
-Cohesion: 0.29
-Nodes (12): default_permission, default_permission, default_permission, core:image, default_permission, global_scope_schema, permission_sets, core:menu (+4 more)
+Cohesion: 0.21
+Nodes (15): core:app, default_permission, global_scope_schema, permission_sets, default_permission, core:event, default_permission, global_scope_schema (+7 more)
 
 ### Community 54 - "Community 54"
 Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-register-listener
 
 ### Community 55 - "Community 55"
-Cohesion: 0.15
-Nodes (13): commands, description, identifier, commands, description, identifier, commands, description (+5 more)
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, allow-name
 
 ### Community 56 - "Community 56"
 Cohesion: 0.15
@@ -470,8 +483,8 @@ Cohesion: 0.22
 Nodes (8): Architecture, Development Baseline, Hardware Assumptions, Model Assumptions, Product Summary, Safety Constraints, VoicePilot Context, Workflow Notes
 
 ### Community 79 - "Community 79"
-Cohesion: 0.22
-Nodes (9): commands, description, identifier, commands, description, identifier, permissions, allow-listen (+1 more)
+Cohesion: 0.06
+Nodes (38): commands, description, identifier, commands, description, identifier, commands, description (+30 more)
 
 ### Community 80 - "Community 80"
 Cohesion: 0.22
@@ -650,8 +663,8 @@ Cohesion: 0.50
 Nodes (3): Context, Done, Task
 
 ### Community 124 - "Community 124"
-Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-bundle-type
+Cohesion: 0.12
+Nodes (17): commands, description, identifier, commands, description, identifier, deny, commands (+9 more)
 
 ### Community 125 - "Community 125"
 Cohesion: 0.50
@@ -667,7 +680,7 @@ Nodes (14): AudioConfig, Default, HotkeyConfig, ModelConfig, AppConfig, AudioCon
 
 ### Community 128 - "Community 128"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-fetch-data-store-identifiers
+Nodes (4): commands, description, identifier, allow-from-path
 
 ### Community 129 - "Community 129"
 Cohesion: 0.50
@@ -695,11 +708,11 @@ Nodes (4): commands, description, identifier, allow-popup
 
 ### Community 136 - "Community 136"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-prepend
+Nodes (4): commands, description, identifier, allow-is-checked
 
 ### Community 137 - "Community 137"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-remove-at
+Nodes (4): commands, description, identifier, allow-is-enabled
 
 ### Community 138 - "Community 138"
 Cohesion: 0.50
@@ -707,7 +720,7 @@ Nodes (4): commands, description, identifier, allow-remove
 
 ### Community 139 - "Community 139"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-set-app-theme
+Nodes (4): commands, description, identifier, allow-new
 
 ### Community 140 - "Community 140"
 Cohesion: 0.50
@@ -723,7 +736,7 @@ Nodes (4): commands, description, identifier, allow-set-as-window-menu
 
 ### Community 143 - "Community 143"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-set-as-windows-menu-for-nsapp
+Nodes (4): commands, description, identifier, allow-remove-data-store
 
 ### Community 144 - "Community 144"
 Cohesion: 0.50
@@ -735,7 +748,7 @@ Nodes (4): commands, description, identifier, allow-set-dock-visibility
 
 ### Community 146 - "Community 146"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, allow-emit-to
+Nodes (4): commands, description, identifier, allow-remove-listener
 
 ### Community 147 - "Community 147"
 Cohesion: 0.50
@@ -750,12 +763,12 @@ Cohesion: 0.50
 Nodes (4): commands, description, identifier, allow-set-enabled
 
 ### Community 150 - "Community 150"
-Cohesion: 0.50
-Nodes (4): core, global_scope_schema, permission_sets, permissions
+Cohesion: 0.25
+Nodes (7): core, global_scope_schema, core:image, global_scope_schema, permission_sets, permission_sets, permissions
 
 ### Community 151 - "Community 151"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-app-hide
+Nodes (4): commands, description, identifier, allow-rgba
 
 ### Community 152 - "Community 152"
 Cohesion: 0.50
@@ -771,15 +784,15 @@ Nodes (4): commands, description, identifier, allow-set-text
 
 ### Community 155 - "Community 155"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-default-window-icon
+Nodes (4): commands, description, identifier, allow-size
 
 ### Community 156 - "Community 156"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-emit
+Nodes (4): commands, description, identifier, allow-supports-multiple-windows
 
 ### Community 157 - "Community 157"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-emit-to
+Nodes (4): commands, description, identifier, allow-tauri-version
 
 ### Community 158 - "Community 158"
 Cohesion: 0.50
@@ -795,11 +808,11 @@ Nodes (4): commands, description, identifier, deny-identifier
 
 ### Community 161 - "Community 161"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-insert
+Nodes (4): commands, description, identifier, allow-version
 
 ### Community 162 - "Community 162"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-set-dock-visibility
+Nodes (4): commands, description, identifier, deny-bundle-type
 
 ### Community 163 - "Community 163"
 Cohesion: 0.50
@@ -807,7 +820,7 @@ Nodes (4): commands, description, identifier, deny-items
 
 ### Community 164 - "Community 164"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-listen
+Nodes (4): commands, description, identifier, deny-create-default
 
 ### Community 165 - "Community 165"
 Cohesion: 0.50
@@ -815,11 +828,11 @@ Nodes (4): commands, description, identifier, deny-name
 
 ### Community 166 - "Community 166"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-register-listener
+Nodes (4): commands, description, identifier, deny-from-bytes
 
 ### Community 167 - "Community 167"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-remove-data-store
+Nodes (4): commands, description, identifier, deny-from-path
 
 ### Community 168 - "Community 168"
 Cohesion: 0.50
@@ -835,7 +848,7 @@ Nodes (4): commands, description, identifier, deny-tauri-version
 
 ### Community 171 - "Community 171"
 Cohesion: 0.50
-Nodes (4): commands, description, identifier, deny-unlisten
+Nodes (4): commands, description, identifier, deny-rgba
 
 ### Community 172 - "Community 172"
 Cohesion: 0.50
@@ -874,8 +887,8 @@ Cohesion: 0.50
 Nodes (3): RESOURCES.md Format, Rules, Structure
 
 ### Community 183 - "Community 183"
-Cohesion: 0.29
-Nodes (6): core:app, global_scope_schema, permission_sets, core:event, global_scope_schema, permission_sets
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-set-app-theme
 
 ### Community 184 - "Community 184"
 Cohesion: 0.67
@@ -885,25 +898,29 @@ Nodes (3): Identifier, description, oneOf
 Cohesion: 0.67
 Nodes (3): Identifier, description, oneOf
 
+### Community 205 - "Community 205"
+Cohesion: 0.50
+Nodes (4): commands, description, identifier, deny-size
+
 ## Knowledge Gaps
-- **927 isolated node(s):** `allow`, `target`, `module`, `moduleResolution`, `lib` (+922 more)
+- **937 isolated node(s):** `allow`, `target`, `module`, `moduleResolution`, `lib` (+932 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `allow` connect `Community 55` to `Community 0`, `Community 128`, `Community 129`, `Community 131`, `Community 5`, `Community 133`, `Community 135`, `Community 8`, `Community 136`, `Community 137`, `Community 138`, `Community 139`, `Community 140`, `Community 141`, `Community 142`, `Community 143`, `Community 144`, `Community 146`, `Community 147`, `Community 145`, `Community 149`, `Community 148`, `Community 151`, `Community 152`, `Community 153`, `Community 154`, `Community 155`, `Community 156`, `Community 157`, `Community 158`, `Community 159`, `Community 160`, `Community 161`, `Community 162`, `Community 163`, `Community 164`, `Community 165`, `Community 166`, `Community 167`, `Community 168`, `Community 169`, `Community 170`, `Community 171`, `Community 172`, `Community 54`, `Community 79`, `Community 124`, `Community 125`, `Community 126`?**
+- **Why does `allow` connect `Community 79` to `Community 0`, `Community 128`, `Community 129`, `Community 131`, `Community 133`, `Community 5`, `Community 135`, `Community 8`, `Community 136`, `Community 137`, `Community 139`, `Community 138`, `Community 140`, `Community 141`, `Community 143`, `Community 142`, `Community 144`, `Community 146`, `Community 147`, `Community 145`, `Community 149`, `Community 148`, `Community 151`, `Community 152`, `Community 153`, `Community 154`, `Community 155`, `Community 156`, `Community 157`, `Community 158`, `Community 159`, `Community 160`, `Community 161`, `Community 162`, `Community 163`, `Community 164`, `Community 165`, `Community 166`, `Community 167`, `Community 168`, `Community 169`, `Community 170`, `Community 171`, `Community 172`, `Community 54`, `Community 55`, `Community 183`, `Community 205`, `Community 124`, `Community 125`, `Community 126`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `deny` connect `Community 0` to `Community 128`, `Community 129`, `Community 131`, `Community 5`, `Community 133`, `Community 135`, `Community 8`, `Community 136`, `Community 137`, `Community 138`, `Community 139`, `Community 140`, `Community 141`, `Community 142`, `Community 143`, `Community 144`, `Community 146`, `Community 147`, `Community 145`, `Community 149`, `Community 148`, `Community 151`, `Community 152`, `Community 153`, `Community 154`, `Community 155`, `Community 156`, `Community 157`, `Community 158`, `Community 159`, `Community 160`, `Community 161`, `Community 162`, `Community 163`, `Community 164`, `Community 165`, `Community 166`, `Community 167`, `Community 168`, `Community 169`, `Community 170`, `Community 171`, `Community 172`, `Community 54`, `Community 55`, `Community 79`, `Community 124`, `Community 125`, `Community 126`?**
+- **Why does `deny` connect `Community 124` to `Community 0`, `Community 128`, `Community 129`, `Community 131`, `Community 133`, `Community 5`, `Community 135`, `Community 8`, `Community 136`, `Community 137`, `Community 139`, `Community 138`, `Community 140`, `Community 141`, `Community 143`, `Community 142`, `Community 144`, `Community 146`, `Community 147`, `Community 145`, `Community 149`, `Community 148`, `Community 151`, `Community 152`, `Community 153`, `Community 154`, `Community 155`, `Community 156`, `Community 157`, `Community 158`, `Community 159`, `Community 160`, `Community 161`, `Community 162`, `Community 163`, `Community 164`, `Community 165`, `Community 166`, `Community 167`, `Community 168`, `Community 169`, `Community 170`, `Community 171`, `Community 172`, `Community 54`, `Community 55`, `Community 183`, `Community 205`, `Community 79`, `Community 125`, `Community 126`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `permissions` connect `Community 5` to `Community 0`, `Community 129`, `Community 131`, `Community 133`, `Community 135`, `Community 136`, `Community 137`, `Community 138`, `Community 140`, `Community 141`, `Community 142`, `Community 143`, `Community 144`, `Community 147`, `Community 148`, `Community 149`, `Community 153`, `Community 154`, `Community 159`, `Community 161`, `Community 163`, `Community 53`, `Community 125`?**
+- **Why does `permissions` connect `Community 5` to `Community 129`, `Community 131`, `Community 133`, `Community 135`, `Community 136`, `Community 137`, `Community 138`, `Community 139`, `Community 140`, `Community 141`, `Community 142`, `Community 144`, `Community 147`, `Community 148`, `Community 149`, `Community 153`, `Community 154`, `Community 159`, `Community 163`, `Community 164`, `Community 53`, `Community 79`, `Community 125`?**
   _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `allow`, `target`, `module` to the rest of the system?**
-  _927 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05217391304347826 - nodes in this community are weakly interconnected._
+  _937 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.06060606060606061 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected._
+- **Should `Community 4` be split into smaller, more focused modules?**
+  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._

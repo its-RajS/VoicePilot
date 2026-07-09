@@ -110,13 +110,13 @@
     "semantic_hash": "2709bd20ac79300b5b0f9bd404d52f3b"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/commands/mod.rs": {
-    "mtime": 1783619705.4663918,
-    "ast_hash": "4a7560ca1ae7a371c6db5ccd669a370d",
+    "mtime": 1783620723.5794659,
+    "ast_hash": "3e893f3446a4a9191dd1d6251a6d2ec6",
     "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/lib.rs": {
-    "mtime": 1783619813.801723,
-    "ast_hash": "5515c2aa9383f3f9a04cf7e392c9d951",
+    "mtime": 1783620896.8645732,
+    "ast_hash": "831572e38b5a4952872f2b589f32e7b2",
     "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/main.rs": {
@@ -145,9 +145,9 @@
     "semantic_hash": "1e419983105783d26819e1fe5954be79"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/services/audio_service.rs": {
-    "mtime": 1783105706.0,
-    "ast_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d",
-    "semantic_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d"
+    "mtime": 1783620896.8637884,
+    "ast_hash": "3d4c1faf59d3caf047eabf9654f24120",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/services/config_service.rs": {
     "mtime": 1783617761.3153439,
@@ -155,9 +155,9 @@
     "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/services/hotkey_service.rs": {
-    "mtime": 1783105706.0,
-    "ast_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d",
-    "semantic_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d"
+    "mtime": 1783620896.8645732,
+    "ast_hash": "99cd3b523702d6043b6eeae92efb4f5a",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/services/ipc_client.rs": {
     "mtime": 1783617729.6755054,
@@ -180,8 +180,8 @@
     "semantic_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/state/app_state.rs": {
-    "mtime": 1783165353.6616607,
-    "ast_hash": "e535c336cd4acc08690d89dab8a684ca",
+    "mtime": 1783620723.5794659,
+    "ast_hash": "d518dca31f2fb1fbe447cf42388f4e18",
     "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/state/mod.rs": {
@@ -205,8 +205,8 @@
     "semantic_hash": "02f44e9ed21aff8ef434cb28de815780"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src/App.tsx": {
-    "mtime": 1783618645.5335093,
-    "ast_hash": "41402e75e4b3ed8998fe4dad4a788167",
+    "mtime": 1783621144.5423477,
+    "ast_hash": "543c412f4560bd76a8e804a570e3515d",
     "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src/components/overlay/LiveOverlay.tsx": {
