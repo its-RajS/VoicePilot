@@ -1,9 +1,4 @@
 {
-  "/home/its-raj/Projects/Main/VoicePilot/.graphify_detect.json": {
-    "mtime": 1783151230.8691888,
-    "ast_hash": "0f79e16cb19bb6b5e2d0e9fd50ad6891",
-    "semantic_hash": "0f79e16cb19bb6b5e2d0e9fd50ad6891"
-  },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/config/migrations/001_initial.sql": {
     "mtime": 1783105733.0,
     "ast_hash": "440b35c54a3091e5cabd42ad23f3460e",
@@ -15,67 +10,67 @@
     "semantic_hash": "e78d6e0c5763583e2237373d9cbe5547"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/__init__.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.5351815,
     "ast_hash": "4867131295172353fe6c2295851defc7",
     "semantic_hash": "4867131295172353fe6c2295851defc7"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/api/__init__.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.4798803,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/api/health.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.4840312,
     "ast_hash": "a6f3c4f01fee8d49faf738fc83b3a3bd",
     "semantic_hash": "a6f3c4f01fee8d49faf738fc83b3a3bd"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/audio/__init__.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.5378788,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/core/__init__.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.5458786,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/core/pipeline.py": {
-    "mtime": 1783105733.0,
-    "ast_hash": "95f816f8a817931960f59924f207fb01",
-    "semantic_hash": "95f816f8a817931960f59924f207fb01"
+    "mtime": 1783617808.7471218,
+    "ast_hash": "875b12e3adf755f97da796b449c7f7ef",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/core/state.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.5561497,
     "ast_hash": "f207deb496329711990a1e8aa52fe40d",
     "semantic_hash": "f207deb496329711990a1e8aa52fe40d"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/engines/__init__.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.49488,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/engines/llm_client.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.4993548,
     "ast_hash": "4e2cd5eb90d783a0eda5e608359260cb",
     "semantic_hash": "4e2cd5eb90d783a0eda5e608359260cb"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/engines/postprocessor.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.5032065,
     "ast_hash": "4e2cd5eb90d783a0eda5e608359260cb",
     "semantic_hash": "4e2cd5eb90d783a0eda5e608359260cb"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/engines/stt_engine.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.4919295,
     "ast_hash": "4e2cd5eb90d783a0eda5e608359260cb",
     "semantic_hash": "4e2cd5eb90d783a0eda5e608359260cb"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/engines/vad_engine.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.5067677,
     "ast_hash": "4e2cd5eb90d783a0eda5e608359260cb",
     "semantic_hash": "4e2cd5eb90d783a0eda5e608359260cb"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/main.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.5105581,
     "ast_hash": "09d332ad3a6760acfa7b8863bb06a471",
     "semantic_hash": "09d332ad3a6760acfa7b8863bb06a471"
   },
@@ -85,44 +80,44 @@
     "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/prompts/__init__.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.5128794,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/prompts/engineering.py": {
-    "mtime": 1783105733.0,
-    "ast_hash": "f6e3d30932296938e439121a44d057ec",
-    "semantic_hash": "f6e3d30932296938e439121a44d057ec"
+    "mtime": 1783617428.437692,
+    "ast_hash": "7814d60d4c420d72d02fa888f69fe430",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/utils/__init__.py": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.4758806,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/package.json": {
-    "mtime": 1783105680.0,
-    "ast_hash": "911ae01efabe2a8e8ed50a917e233523",
-    "semantic_hash": "911ae01efabe2a8e8ed50a917e233523"
+    "mtime": 1783162090.074115,
+    "ast_hash": "c542dee550f6e46ffb52ce1bba00f491",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/scripts/build.sh": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.8488212,
     "ast_hash": "3ae613afefa4edd3961d095568622665",
     "semantic_hash": "3ae613afefa4edd3961d095568622665"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/scripts/dev-setup.sh": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.8568354,
     "ast_hash": "2709bd20ac79300b5b0f9bd404d52f3b",
     "semantic_hash": "2709bd20ac79300b5b0f9bd404d52f3b"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/commands/mod.rs": {
-    "mtime": 1783105706.0,
-    "ast_hash": "306b926de7ac77fa767a935ad9dfcd22",
-    "semantic_hash": "306b926de7ac77fa767a935ad9dfcd22"
+    "mtime": 1783617746.8164165,
+    "ast_hash": "c70e7fd37c98540ba38c4d3324ba493a",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/lib.rs": {
-    "mtime": 1783105706.0,
-    "ast_hash": "a330a0cb54d04dff95dcd844e52bea72",
-    "semantic_hash": "a330a0cb54d04dff95dcd844e52bea72"
+    "mtime": 1783617781.1362484,
+    "ast_hash": "157fc9b40032230bce8031769f311019",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/main.rs": {
     "mtime": 1783105706.0,
@@ -155,9 +150,9 @@
     "semantic_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/services/config_service.rs": {
-    "mtime": 1783105706.0,
-    "ast_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d",
-    "semantic_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d"
+    "mtime": 1783617761.3153439,
+    "ast_hash": "6bd44206824a870fad2ed34239daf5a7",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/services/hotkey_service.rs": {
     "mtime": 1783105706.0,
@@ -165,14 +160,14 @@
     "semantic_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/services/ipc_client.rs": {
-    "mtime": 1783105706.0,
-    "ast_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d",
-    "semantic_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d"
+    "mtime": 1783617729.6755054,
+    "ast_hash": "55afd66087c8f2e4f41de4ab769ddb0e",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/services/mod.rs": {
-    "mtime": 1783105706.0,
-    "ast_hash": "693a9c2c445be37cd90d1d1a243110d5",
-    "semantic_hash": "693a9c2c445be37cd90d1d1a243110d5"
+    "mtime": 1783165353.661262,
+    "ast_hash": "a7b624593beb871477687537d22af096",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/services/tray_manager.rs": {
     "mtime": 1783105706.0,
@@ -185,9 +180,9 @@
     "semantic_hash": "e45c0c7a4d3cf35fd5fd7faeda30fa8d"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/state/app_state.rs": {
-    "mtime": 1783105706.0,
-    "ast_hash": "ace8ec047c5ad003768b885a494ba6b9",
-    "semantic_hash": "ace8ec047c5ad003768b885a494ba6b9"
+    "mtime": 1783165353.6616607,
+    "ast_hash": "e535c336cd4acc08690d89dab8a684ca",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/state/mod.rs": {
     "mtime": 1783105706.0,
@@ -200,24 +195,24 @@
     "semantic_hash": "b09ca123957fd66f1838e70022203515"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/utils/paths.rs": {
-    "mtime": 1783151643.2333431,
-    "ast_hash": "da9eaaa45ea361cfee8892b66f82b8e0",
-    "semantic_hash": "da9eaaa45ea361cfee8892b66f82b8e0"
+    "mtime": 1783161962.6104517,
+    "ast_hash": "bf2c0d1a9bf0d88bc59c0b1e7512cb3d",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/tauri.conf.json": {
-    "mtime": 1783105680.0,
+    "mtime": 1783154692.5756712,
     "ast_hash": "02f44e9ed21aff8ef434cb28de815780",
     "semantic_hash": "02f44e9ed21aff8ef434cb28de815780"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src/App.tsx": {
-    "mtime": 1783105706.0,
-    "ast_hash": "e819ffe1e6ca71af79de5fb465b774c5",
-    "semantic_hash": "e819ffe1e6ca71af79de5fb465b774c5"
+    "mtime": 1783618645.5335093,
+    "ast_hash": "41402e75e4b3ed8998fe4dad4a788167",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src/components/overlay/LiveOverlay.tsx": {
-    "mtime": 1783105706.0,
-    "ast_hash": "50af4e6cbbcbc2811c15b47837aa6af6",
-    "semantic_hash": "50af4e6cbbcbc2811c15b47837aa6af6"
+    "mtime": 1783166278.3862896,
+    "ast_hash": "bf3b3a1e21a4b9224141db64ac2d40ea",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src/main.tsx": {
     "mtime": 1783105706.0,
@@ -225,17 +220,17 @@
     "semantic_hash": "aa122bdcf833a2c00fdf9ca8e5348675"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src/stores/transcriptStore.ts": {
-    "mtime": 1783105706.0,
-    "ast_hash": "406de0edab0cf92b3ef226b0ef9913ba",
-    "semantic_hash": "406de0edab0cf92b3ef226b0ef9913ba"
+    "mtime": 1783166278.3872895,
+    "ast_hash": "684c971323dca6d6bdf4a627335036ef",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src/types/config.ts": {
-    "mtime": 1783105706.0,
+    "mtime": 1783154692.5793774,
     "ast_hash": "49b6f2f84b3fea83dd81349de28c19e2",
     "semantic_hash": "49b6f2f84b3fea83dd81349de28c19e2"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/tsconfig.json": {
-    "mtime": 1783105680.0,
+    "mtime": 1783154685.740516,
     "ast_hash": "477be7fd1ecef1acc1856477fe38944b",
     "semantic_hash": "477be7fd1ecef1acc1856477fe38944b"
   },
@@ -245,34 +240,34 @@
     "semantic_hash": "ba3aa287b5d335e61e31566e47dc42aa"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.github/workflows/ci.yml": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154685.7594864,
     "ast_hash": "1cb5ffeb6efd37840e684a553d8e2329",
     "semantic_hash": "1cb5ffeb6efd37840e684a553d8e2329"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/CHANGELOG.md": {
-    "mtime": 1783105680.0,
+    "mtime": 1783154692.6026318,
     "ast_hash": "93b1c1bbb7bc4b61f331d19b45abe6bf",
     "semantic_hash": "93b1c1bbb7bc4b61f331d19b45abe6bf"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/CONTRIBUTING.md": {
-    "mtime": 1783105680.0,
+    "mtime": 1783154692.598455,
     "ast_hash": "f051058a27eea7cdc25de71dd37d606e",
     "semantic_hash": "f051058a27eea7cdc25de71dd37d606e"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/README.md": {
-    "mtime": 1783105680.0,
-    "ast_hash": "32fee811ffea74f11b76792ba0cdfcd6",
-    "semantic_hash": "32fee811ffea74f11b76792ba0cdfcd6"
+    "mtime": 1783156528.515402,
+    "ast_hash": "a884b43bfb24e4fbf4dcd34d972bde99",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/docs/architecture.md": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.8640218,
     "ast_hash": "70cdf323ff7246b0ed2b56274da19235",
     "semantic_hash": "70cdf323ff7246b0ed2b56274da19235"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/docs/development.md": {
-    "mtime": 1783105733.0,
-    "ast_hash": "0d2fd81e86bd4dffd24a4a28aac1b8c5",
-    "semantic_hash": "0d2fd81e86bd4dffd24a4a28aac1b8c5"
+    "mtime": 1783164195.9396915,
+    "ast_hash": "6632cbd1a1a9d2d87794da3f7f1f2ef9",
+    "semantic_hash": ""
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/index.html": {
     "mtime": 1783105680.0,
@@ -280,8 +275,408 @@
     "semantic_hash": "1f2ffd459aa23e76363f9cb497417924"
   },
   "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/requirements.txt": {
-    "mtime": 1783105733.0,
+    "mtime": 1783154692.5635767,
     "ast_hash": "4fb152ad816331680b87f7ef9133937e",
     "semantic_hash": "4fb152ad816331680b87f7ef9133937e"
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/diagnosing-bugs/scripts/hitl-loop.template.sh": {
+    "mtime": 1783154685.8500435,
+    "ast_hash": "46a2a00761be2785e59661f0e3c11471",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.claude/settings.local.json": {
+    "mtime": 1783617593.2993402,
+    "ast_hash": "0841c503d113f0693692c934f2ab7838",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.sandcastle/main.ts": {
+    "mtime": 1783161872.9981444,
+    "ast_hash": "9c02d552abbf0c4664ba0551e6413402",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.sandcastle/tsconfig.json": {
+    "mtime": 1783156528.4761891,
+    "ast_hash": "fd4abacfcc7ede8d93730701e688616c",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/engines/ollama_client.py": {
+    "mtime": 1783617419.9758108,
+    "ast_hash": "22da19c1dfce0bec4ad94529273a0615",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/inference/src/voicepilot_inference/ipc_server.py": {
+    "mtime": 1783617792.7991939,
+    "ast_hash": "019a03fb448b897eae6aac42fb6a200f",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/skills-lock.json": {
+    "mtime": 1783154692.5681832,
+    "ast_hash": "974287715f505cd321971a7110be6d88",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/build.rs": {
+    "mtime": 1783161962.6083753,
+    "ast_hash": "48af8f08e39b73562f866d3a50b2e88a",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/gen/schemas/acl-manifests.json": {
+    "mtime": 1783161975.214867,
+    "ast_hash": "b849cb752c4dc91e746bca7e411dc9ae",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/gen/schemas/capabilities.json": {
+    "mtime": 1783161975.2213743,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/gen/schemas/desktop-schema.json": {
+    "mtime": 1783161975.2213743,
+    "ast_hash": "44a32f28e297a982b5b11885645d377b",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/gen/schemas/linux-schema.json": {
+    "mtime": 1783161975.220867,
+    "ast_hash": "44a32f28e297a982b5b11885645d377b",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/src/services/ollama_service.rs": {
+    "mtime": 1783617773.831283,
+    "ast_hash": "46d92160954b0ad1bbe41318cfee56bf",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/vite.config.ts": {
+    "mtime": 1783162138.8775225,
+    "ast_hash": "aaa95dce9c482bbcb1d5a6dfd6b3ed43",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/agent-coordination/SKILL.md": {
+    "mtime": 1783154686.0425756,
+    "ast_hash": "2ac35a43e5f0d97ee1479ada09382613",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/api-patterns/SKILL.md": {
+    "mtime": 1783154686.0246038,
+    "ast_hash": "2ea6cf898c7dc2c565d74b9fe64b90d5",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/ask-matt/SKILL.md": {
+    "mtime": 1783154686.07305,
+    "ast_hash": "b0c2b7c5905e20213662d72fa0214f70",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/code-review/SKILL.md": {
+    "mtime": 1783154686.0968087,
+    "ast_hash": "6dd105e464896f4964c3844f5a53f341",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/codebase-design/DEEPENING.md": {
+    "mtime": 1783154685.9177256,
+    "ast_hash": "2e14795cf50abe04a6cb1d6cbb57d5f0",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/codebase-design/DESIGN-IT-TWICE.md": {
+    "mtime": 1783154685.9702213,
+    "ast_hash": "8046cbefbdeeeea756399aa4c7a1852b",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/codebase-design/SKILL.md": {
+    "mtime": 1783154685.9138968,
+    "ast_hash": "bba82452bae25a9187c8ce076406d752",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/confluence-docs/SKILL.md": {
+    "mtime": 1783154685.9964359,
+    "ast_hash": "14bf08e532ecac899004a3ec46162242",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/deployment-sop/SKILL.md": {
+    "mtime": 1783154686.0491943,
+    "ast_hash": "0971e60d65dc857e94056813cbec47a7",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/diagnosing-bugs/SKILL.md": {
+    "mtime": 1783154685.846577,
+    "ast_hash": "77f2ef3211c1cff2e9c7a45fa234e54c",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/domain-modeling/ADR-FORMAT.md": {
+    "mtime": 1783154685.8692884,
+    "ast_hash": "bb327bab674f400796f64b6e2ef5850c",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/domain-modeling/CONTEXT-FORMAT.md": {
+    "mtime": 1783154685.865241,
+    "ast_hash": "c2f41ffc931955b2b8d01322273d75fa",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/domain-modeling/SKILL.md": {
+    "mtime": 1783154685.861565,
+    "ast_hash": "ef92f0dcd9f2007e71a319a3af54d2b1",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/frontend-patterns/SKILL.md": {
+    "mtime": 1783154685.8540003,
+    "ast_hash": "0d71807bee070512d6be1c61d2c28ffe",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/git-advanced/SKILL.md": {
+    "mtime": 1783154685.9850068,
+    "ast_hash": "5c63c7089f363857bbbb933f07d76ab9",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/grill-me/SKILL.md": {
+    "mtime": 1783154686.07662,
+    "ast_hash": "d07c47e3f0ffefd2c28354eb81a1e831",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/grill-with-docs/SKILL.md": {
+    "mtime": 1783154686.088921,
+    "ast_hash": "7c5095d1b2c2ed9483df63c4622d05ea",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/grilling/SKILL.md": {
+    "mtime": 1783154686.1197395,
+    "ast_hash": "249565b183dd24785dca5d5509678662",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/handoff/SKILL.md": {
+    "mtime": 1783154685.8429782,
+    "ast_hash": "65f1183e9ee70daea58cf1cccea92c40",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/implement/SKILL.md": {
+    "mtime": 1783154686.101097,
+    "ast_hash": "1061fc6b4d7fd855dbf11810b3ea74d0",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/improve-codebase-architecture/HTML-REPORT.md": {
+    "mtime": 1783154686.1160717,
+    "ast_hash": "751df2fdf436e9539123d6ebc70c1e86",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/improve-codebase-architecture/SKILL.md": {
+    "mtime": 1783154686.1120613,
+    "ast_hash": "a9680ff1241d53c7f5f8cc42f4ca9ed0",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/linear-sop/SKILL.md": {
+    "mtime": 1783154685.992638,
+    "ast_hash": "a40e9a6ab9f9402eb1ea0087e717a146",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/migration-patterns/SKILL.md": {
+    "mtime": 1783154685.9811454,
+    "ast_hash": "f25f9e0a612f21ef5fb2acf83a719aa9",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/orchestration-patterns/SKILL.md": {
+    "mtime": 1783154686.0846,
+    "ast_hash": "d9c7f5e5c1e231a608ba6b2aef453563",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/pattern-discovery/SKILL.md": {
+    "mtime": 1783154685.988691,
+    "ast_hash": "c403b3d1e15910edb4f0686f8fe3bfb1",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/prototype/LOGIC.md": {
+    "mtime": 1783154686.0310657,
+    "ast_hash": "d57721452aacaa04caacd0bc7c5c2f49",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/prototype/SKILL.md": {
+    "mtime": 1783154686.0348403,
+    "ast_hash": "01ef10b7e794d4d48815802e6ccb4177",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/prototype/UI.md": {
+    "mtime": 1783154686.038763,
+    "ast_hash": "c1eaad6437c90d5660b2ffc9ff91ffb4",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/release-patterns/SKILL.md": {
+    "mtime": 1783154686.0041964,
+    "ast_hash": "ee6291378a1d05328f6bde4fb048ae36",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/research/SKILL.md": {
+    "mtime": 1783154686.1536248,
+    "ast_hash": "506b3477669c57820d944af5766105cc",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/rls-patterns/SKILL.md": {
+    "mtime": 1783154686.020572,
+    "ast_hash": "7809564f9b6c2921f31f4f6b6c55dc13",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/safe-workflow/SKILL.md": {
+    "mtime": 1783154686.028013,
+    "ast_hash": "a63a103a5afc04650f82dcdf3b9ad623",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/security-audit/SKILL.md": {
+    "mtime": 1783154686.092846,
+    "ast_hash": "afefe130e024380881ff3e0a2192f15c",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/setup-matt-pocock-skills/SKILL.md": {
+    "mtime": 1783154685.8914368,
+    "ast_hash": "bac25a9151eecb522568567ed18ea377",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/setup-matt-pocock-skills/domain.md": {
+    "mtime": 1783154685.9100518,
+    "ast_hash": "35089ed6a70a657c91fd100ade31b642",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/setup-matt-pocock-skills/issue-tracker-github.md": {
+    "mtime": 1783154685.899194,
+    "ast_hash": "3cd8509285524d31a33279b8cb0870e5",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/setup-matt-pocock-skills/issue-tracker-gitlab.md": {
+    "mtime": 1783154685.906132,
+    "ast_hash": "f65c57249762602d86ca3af76ad77615",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/setup-matt-pocock-skills/issue-tracker-local.md": {
+    "mtime": 1783154685.8956006,
+    "ast_hash": "ac4f600d10af8a8390b24ab6b57215b7",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/setup-matt-pocock-skills/triage-labels.md": {
+    "mtime": 1783154685.90276,
+    "ast_hash": "22add54cb98451c55b20e6b7992d4a85",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/spec-creation/SKILL.md": {
+    "mtime": 1783154685.8578804,
+    "ast_hash": "94a2043badffcd47816de28636be8c64",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/stripe-patterns/SKILL.md": {
+    "mtime": 1783154686.0079787,
+    "ast_hash": "41c9ae37281f0b544a01d603603ba589",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/tdd/SKILL.md": {
+    "mtime": 1783154686.1343284,
+    "ast_hash": "a78e613a36731153b960491c24b06106",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/tdd/mocking.md": {
+    "mtime": 1783154686.1499932,
+    "ast_hash": "c5505e8da8f516c7dacebd01c58a4c2c",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/tdd/tests.md": {
+    "mtime": 1783154686.1466765,
+    "ast_hash": "0a462499661825df11a0852c42382f10",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/teach/GLOSSARY-FORMAT.md": {
+    "mtime": 1783154686.0694838,
+    "ast_hash": "4916a920577c698e81e058908bde8ae3",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/teach/LEARNING-RECORD-FORMAT.md": {
+    "mtime": 1783154686.0584242,
+    "ast_hash": "ad7d92889545a0e21d44bb218fbcfae0",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/teach/MISSION-FORMAT.md": {
+    "mtime": 1783154686.0656316,
+    "ast_hash": "c45dd419c9b463520912f74f87b0c351",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/teach/RESOURCES-FORMAT.md": {
+    "mtime": 1783154686.0619318,
+    "ast_hash": "919b17fcf54e066d4ff8c5173262cdee",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/teach/SKILL.md": {
+    "mtime": 1783154686.053161,
+    "ast_hash": "43cea31639274b2f4e371ecbe108356d",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/team-coordination/SKILL.md": {
+    "mtime": 1783154685.87321,
+    "ast_hash": "8dccf2b2ed852627cfa5cc580a1ca7c0",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/testing-patterns/SKILL.md": {
+    "mtime": 1783154686.045875,
+    "ast_hash": "d7a6a162fd0ceeb95a970db0d55df29a",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/to-issues/SKILL.md": {
+    "mtime": 1783154686.080119,
+    "ast_hash": "17e4bba60229d7fbd336b8382fabc324",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/to-prd/SKILL.md": {
+    "mtime": 1783154686.0001671,
+    "ast_hash": "f01a6a73ef27a72cdeb24d963e5b48d5",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/triage/AGENT-BRIEF.md": {
+    "mtime": 1783154686.1272402,
+    "ast_hash": "64f3b89bc793673428ed93c6c583133a",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/triage/OUT-OF-SCOPE.md": {
+    "mtime": 1783154686.130763,
+    "ast_hash": "0d18f9ccba4c63db8b5c86c8e0000cd9",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/triage/SKILL.md": {
+    "mtime": 1783154686.123448,
+    "ast_hash": "0e34e837f9e5add977dd2e95629d5afe",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/writing-great-skills/GLOSSARY.md": {
+    "mtime": 1783154685.9772666,
+    "ast_hash": "4b2644d411748fc225401d8311bed29c",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.agents/skills/writing-great-skills/SKILL.md": {
+    "mtime": 1783154685.9739046,
+    "ast_hash": "5844fe91d73c2c250e94a610c067a889",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.codex/README.md": {
+    "mtime": 1783159254.9627016,
+    "ast_hash": "dd625a084e4438e40d86eb1239dc63d6",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.graphify_uncached.txt": {
+    "mtime": 1783154686.1572037,
+    "ast_hash": "0d4a0b8d165cf6d390206ba082d041df",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/.sandcastle/prompt.md": {
+    "mtime": 1783157183.4806716,
+    "ast_hash": "e83b296b7a71253abc181dd17cad85f6",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/AGENTS.md": {
+    "mtime": 1783615323.2964342,
+    "ast_hash": "3c21f71537a741e533e78daa4283cd9e",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/docs/CONTEXT.md": {
+    "mtime": 1783159254.9533827,
+    "ast_hash": "78d9ea4a36ae8ea951ca127b9e883412",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/docs/agents/domain.md": {
+    "mtime": 1783615332.6259327,
+    "ast_hash": "40ecd0caad221b581c6763a7b161a9cc",
+    "semantic_hash": ""
+  },
+  "/home/its-raj/Projects/Main/VoicePilot/mvp-voicePilot/src-tauri/icons/icon.png": {
+    "mtime": 1783162031.8186784,
+    "ast_hash": "c5af1d0eb19ee8b9d16078c7a855efe5",
+    "semantic_hash": ""
   }
 }
